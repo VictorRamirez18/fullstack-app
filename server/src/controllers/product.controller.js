@@ -3,63 +3,63 @@ import * as ProductService from '../services/product.service';
 
 export const getAllProducts = async (req, res, next) => {
   try {
-    const data = await Productservice.getAllUsers();
+    const data = await ProductService.getAllProducts();
     res.status(HttpStatus.OK).json({
       code: HttpStatus.OK,
       data: data,
-      message: 'All users fetched successfully'
+      message: 'All products fetched successfully'
     });
   } catch (error) {
     next(error);
   }
 };
 
-export const getUser = async (req, res, next) => {
+export const getProduct = async (req, res, next) => {
   try {
-    const data = await ProductService.getUser(req.params.id);
+    const data = await ProductService.getProduct(req.params.id);
     res.status(HttpStatus.OK).json({
       code: HttpStatus.OK,
       data: data,
-      message: 'User fetched successfully'
+      message: 'Product fetched successfully'
     });
   } catch (error) {
     next(error);
   }
 };
 
-export const newUser = async (req, res, next) => {
+export const newProduct = async (req, res, next) => {
   try {
-    const data = await ProductService.newUser(req.body);
+    const data = await ProductService.newProduct(req.body);
     res.status(HttpStatus.CREATED).json({
       code: HttpStatus.CREATED,
       data: data,
-      message: 'User created successfully'
+      message: 'Product created successfully'
     });
   } catch (error) {
     next(error);
   }
 };
 
-export const updateUser = async (req, res, next) => {
+export const updateProduct = async (req, res, next) => {
   try {
-    const data = await ProductService.updateUser(req.params.id, req.body);
+    const data = await ProductService.updateProduct(req.params.id, req.body);
     res.status(HttpStatus.ACCEPTED).json({
       code: HttpStatus.ACCEPTED,
       data: data,
-      message: 'User updated successfully'
+      message: 'Product updated successfully'
     });
   } catch (error) {
     next(error);
   }
 };
 
-export const deleteUser = async (req, res, next) => {
+export const deleteProduct = async (req, res, next) => {
   try {
-    await ProductService.updateUser(req.params.id);
+    await ProductService.deleteProduct(req.params.id);
     res.status(HttpStatus.OK).json({
       code: HttpStatus.OK,
       data: [],
-      message: 'User deleted successfully'
+      message: 'Product deleted successfully'
     });
   } catch (error) {
     next(error);

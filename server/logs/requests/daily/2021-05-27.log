@@ -6,3 +6,73 @@ info: ::1 - - [28/May/2021:01:42:39 +0000] "GET / HTTP/1.1" 404 47 "-" "Mozilla/
 
 info: ::1 - - [28/May/2021:01:43:45 +0000] "GET /api/v1/ HTTP/1.1" 200 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 OPR/76.0.4017.123"
 
+info: ::1 - - [28/May/2021:01:57:31 +0000] "GET /api/v1/products HTTP/1.1" 500 64 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 OPR/76.0.4017.123"
+
+info: ::1 - - [28/May/2021:01:58:18 +0000] "GET /api/v1/products HTTP/1.1" 500 79 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 OPR/76.0.4017.123"
+
+info: ::1 - - [28/May/2021:01:58:53 +0000] "GET /api/v1/products HTTP/1.1" 200 210 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 OPR/76.0.4017.123"
+
+info: ::1 - - [28/May/2021:02:24:29 +0000] "GET /api/v1/products HTTP/1.1" 200 210 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:26:10 +0000] "POST /api/v1/products HTTP/1.1" 201 206 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:26:25 +0000] "POST /api/v1/products HTTP/1.1" 500 78 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:26:42 +0000] "POST /api/v1/products HTTP/1.1" 201 209 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:28:04 +0000] "POST /api/v1/products HTTP/1.1" - - "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:29:46 +0000] "POST /api/v1/products HTTP/1.1" 400 53 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:29:54 +0000] "POST /api/v1/products HTTP/1.1" 500 70 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:30:07 +0000] "POST /api/v1/products HTTP/1.1" 500 86 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:30:18 +0000] "POST /api/v1/products HTTP/1.1" 201 207 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:35:45 +0000] "GET /api/v1/products/4 HTTP/1.1" 200 203 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:35:59 +0000] "PUT /api/v1/products/4 HTTP/1.1" 202 119 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:41:08 +0000] "POST /api/v1/products HTTP/1.1" 201 204 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:41:20 +0000] "POST /api/v1/products HTTP/1.1" 201 208 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:41:32 +0000] "POST /api/v1/products HTTP/1.1" 201 207 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:41:37 +0000] "GET /api/v1/products HTTP/1.1" 200 551 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:41:44 +0000] "GET /api/v1/products/3 HTTP/1.1" 200 222 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:42:00 +0000] "PUT /api/v1/products/delete/3 HTTP/1.1" 404 47 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:42:59 +0000] "PUT /api/v1/products/delete/3 HTTP/1.1" 200 63 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:43:16 +0000] "GET /api/v1/products HTTP/1.1" 200 389 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:00:34 +0000] "POST /api/v1/users/signin HTTP/1.1" 400 36 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:00:57 +0000] "POST /api/v1/users/signin HTTP/1.1" 400 51 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:01:03 +0000] "POST /api/v1/users/signin HTTP/1.1" 200 24 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:02:06 +0000] "POST /api/v1/users/signin HTTP/1.1" 500 62 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:02:16 +0000] "POST /api/v1/users/signin HTTP/1.1" 500 62 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:03:33 +0000] "POST /api/v1/users/signin HTTP/1.1" 500 66 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:03:40 +0000] "POST /api/v1/users/signin HTTP/1.1" 500 89 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:03:49 +0000] "POST /api/v1/users/signin HTTP/1.1" 500 89 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:04:05 +0000] "POST /api/v1/users/signin HTTP/1.1" 500 74 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:04:17 +0000] "POST /api/v1/users/signin HTTP/1.1" 400 36 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:04:23 +0000] "POST /api/v1/users/signin HTTP/1.1" 400 51 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:04:27 +0000] "POST /api/v1/users/signin HTTP/1.1" 400 36 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:04:31 +0000] "POST /api/v1/users/signin HTTP/1.1" 200 24 "-" "PostmanRuntime/7.28.0"
+

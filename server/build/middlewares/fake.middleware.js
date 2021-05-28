@@ -5,7 +5,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.userAuth = void 0;
+exports.fakeAuth = void 0;
 
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 
@@ -15,56 +15,68 @@ var _httpStatusCodes = _interopRequireDefault(require("http-status-codes"));
 
 var _jsonwebtoken = _interopRequireDefault(require("jsonwebtoken"));
 
-var userAuth = /*#__PURE__*/function () {
-  var _ref = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee(req, res, next) {
-    var bearerToken, _yield$jwt$verify, user;
+var authConfig = require('../config/auth');
 
+var fakeAuth = /*#__PURE__*/function () {
+  var _ref = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee(req, res, next) {
+    var name;
     return _regenerator["default"].wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
             _context.prev = 0;
-            bearerToken = req.header('Authorization');
+            name = req.body.name;
 
-            if (bearerToken) {
+            if (name) {
               _context.next = 4;
               break;
             }
 
             throw {
               code: _httpStatusCodes["default"].BAD_REQUEST,
-              message: 'Authorization token is required'
+              message: 'FLAG: name is required'
             };
 
           case 4:
-            _context.next = 6;
-            return _jsonwebtoken["default"].verify(bearerToken, 'your-secret-key');
+            if (!(name === 'Laptop')) {
+              _context.next = 8;
+              break;
+            }
 
-          case 6:
-            _yield$jwt$verify = _context.sent;
-            user = _yield$jwt$verify.user;
-            res.locals.user = user;
-            res.locals.token = bearerToken;
-            next();
-            _context.next = 16;
+            res.locals.resultfakeAuth = name;
+            _context.next = 9;
             break;
 
-          case 13:
-            _context.prev = 13;
+          case 8:
+            throw {
+              code: _httpStatusCodes["default"].BAD_REQUEST,
+              message: 'Name isn´t equals to Laptop'
+            };
+
+          case 9:
+            // const { user } = await jwt.verify(name, authConfig.secret);
+            // res.locals.user = user;
+            // res.locals.token = name;
+            next();
+            _context.next = 15;
+            break;
+
+          case 12:
+            _context.prev = 12;
             _context.t0 = _context["catch"](0);
             next(_context.t0);
 
-          case 16:
+          case 15:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 13]]);
+    }, _callee, null, [[0, 12]]);
   }));
 
-  return function userAuth(_x, _x2, _x3) {
+  return function fakeAuth(_x, _x2, _x3) {
     return _ref.apply(this, arguments);
   };
 }();
 
-exports.userAuth = userAuth;
+exports.fakeAuth = fakeAuth;

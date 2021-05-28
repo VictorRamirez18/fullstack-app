@@ -7,7 +7,7 @@ var _typeof = require("@babel/runtime/helpers/typeof");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.deleteUser = exports.updateUser = exports.newUser = exports.getUser = exports.getAllProducts = void 0;
+exports.deleteProduct = exports.updateProduct = exports.newProduct = exports.getProduct = exports.getAllProducts = void 0;
 
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 
@@ -30,14 +30,14 @@ var getAllProducts = /*#__PURE__*/function () {
           case 0:
             _context.prev = 0;
             _context.next = 3;
-            return Productservice.getAllUsers();
+            return ProductService.getAllProducts();
 
           case 3:
             data = _context.sent;
             res.status(_httpStatusCodes["default"].OK).json({
               code: _httpStatusCodes["default"].OK,
               data: data,
-              message: 'All users fetched successfully'
+              message: 'All products fetched successfully'
             });
             _context.next = 10;
             break;
@@ -62,7 +62,7 @@ var getAllProducts = /*#__PURE__*/function () {
 
 exports.getAllProducts = getAllProducts;
 
-var getUser = /*#__PURE__*/function () {
+var getProduct = /*#__PURE__*/function () {
   var _ref2 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee2(req, res, next) {
     var data;
     return _regenerator["default"].wrap(function _callee2$(_context2) {
@@ -71,14 +71,14 @@ var getUser = /*#__PURE__*/function () {
           case 0:
             _context2.prev = 0;
             _context2.next = 3;
-            return ProductService.getUser(req.params.id);
+            return ProductService.getProduct(req.params.id);
 
           case 3:
             data = _context2.sent;
             res.status(_httpStatusCodes["default"].OK).json({
               code: _httpStatusCodes["default"].OK,
               data: data,
-              message: 'User fetched successfully'
+              message: 'Product fetched successfully'
             });
             _context2.next = 10;
             break;
@@ -96,14 +96,14 @@ var getUser = /*#__PURE__*/function () {
     }, _callee2, null, [[0, 7]]);
   }));
 
-  return function getUser(_x4, _x5, _x6) {
+  return function getProduct(_x4, _x5, _x6) {
     return _ref2.apply(this, arguments);
   };
 }();
 
-exports.getUser = getUser;
+exports.getProduct = getProduct;
 
-var newUser = /*#__PURE__*/function () {
+var newProduct = /*#__PURE__*/function () {
   var _ref3 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee3(req, res, next) {
     var data;
     return _regenerator["default"].wrap(function _callee3$(_context3) {
@@ -112,14 +112,14 @@ var newUser = /*#__PURE__*/function () {
           case 0:
             _context3.prev = 0;
             _context3.next = 3;
-            return ProductService.newUser(req.body);
+            return ProductService.newProduct(req.body);
 
           case 3:
             data = _context3.sent;
             res.status(_httpStatusCodes["default"].CREATED).json({
               code: _httpStatusCodes["default"].CREATED,
               data: data,
-              message: 'User created successfully'
+              message: 'Product created successfully'
             });
             _context3.next = 10;
             break;
@@ -137,14 +137,14 @@ var newUser = /*#__PURE__*/function () {
     }, _callee3, null, [[0, 7]]);
   }));
 
-  return function newUser(_x7, _x8, _x9) {
+  return function newProduct(_x7, _x8, _x9) {
     return _ref3.apply(this, arguments);
   };
 }();
 
-exports.newUser = newUser;
+exports.newProduct = newProduct;
 
-var updateUser = /*#__PURE__*/function () {
+var updateProduct = /*#__PURE__*/function () {
   var _ref4 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee4(req, res, next) {
     var data;
     return _regenerator["default"].wrap(function _callee4$(_context4) {
@@ -153,14 +153,14 @@ var updateUser = /*#__PURE__*/function () {
           case 0:
             _context4.prev = 0;
             _context4.next = 3;
-            return ProductService.updateUser(req.params.id, req.body);
+            return ProductService.updateProduct(req.params.id, req.body);
 
           case 3:
             data = _context4.sent;
             res.status(_httpStatusCodes["default"].ACCEPTED).json({
               code: _httpStatusCodes["default"].ACCEPTED,
               data: data,
-              message: 'User updated successfully'
+              message: 'Product updated successfully'
             });
             _context4.next = 10;
             break;
@@ -178,14 +178,14 @@ var updateUser = /*#__PURE__*/function () {
     }, _callee4, null, [[0, 7]]);
   }));
 
-  return function updateUser(_x10, _x11, _x12) {
+  return function updateProduct(_x10, _x11, _x12) {
     return _ref4.apply(this, arguments);
   };
 }();
 
-exports.updateUser = updateUser;
+exports.updateProduct = updateProduct;
 
-var deleteUser = /*#__PURE__*/function () {
+var deleteProduct = /*#__PURE__*/function () {
   var _ref5 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee5(req, res, next) {
     return _regenerator["default"].wrap(function _callee5$(_context5) {
       while (1) {
@@ -193,13 +193,13 @@ var deleteUser = /*#__PURE__*/function () {
           case 0:
             _context5.prev = 0;
             _context5.next = 3;
-            return ProductService.updateUser(req.params.id);
+            return ProductService.deleteProduct(req.params.id);
 
           case 3:
             res.status(_httpStatusCodes["default"].OK).json({
               code: _httpStatusCodes["default"].OK,
               data: [],
-              message: 'User deleted successfully'
+              message: 'Product deleted successfully'
             });
             _context5.next = 9;
             break;
@@ -217,9 +217,9 @@ var deleteUser = /*#__PURE__*/function () {
     }, _callee5, null, [[0, 6]]);
   }));
 
-  return function deleteUser(_x13, _x14, _x15) {
+  return function deleteProduct(_x13, _x14, _x15) {
     return _ref5.apply(this, arguments);
   };
 }();
 
-exports.deleteUser = deleteUser;
+exports.deleteProduct = deleteProduct;

@@ -7,7 +7,7 @@ var _typeof = require("@babel/runtime/helpers/typeof");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getAllProducts = void 0;
+exports.getProduct = exports.deleteProduct = exports.updateProduct = exports.newProduct = exports.getAllProducts = void 0;
 
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 
@@ -47,28 +47,130 @@ var getAllProducts = /*#__PURE__*/function () {
   return function getAllProducts() {
     return _ref.apply(this, arguments);
   };
-}(); // //create new user
-// export const newUser = async (body) => {
-//   const data = await User.create(body);
-//   return data;
-// };
-// //update single user
-// export const updateUser = async (id, body) => {
-//   await User.update(body, {
-//     where: { id: id }
-//   });
-//   return body;
-// };
-// //delete single user
-// export const deleteUser = async (id) => {
-//   await User.destroy({ where: { id: id } });
-//   return '';
-// };
-// //get single user
-// export const getUser = async (id) => {
-//   const data = await User.findByPk(id);
-//   return data;
-// };
+}(); //create new product
 
 
 exports.getAllProducts = getAllProducts;
+
+var newProduct = /*#__PURE__*/function () {
+  var _ref2 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee2(body) {
+    var data;
+    return _regenerator["default"].wrap(function _callee2$(_context2) {
+      while (1) {
+        switch (_context2.prev = _context2.next) {
+          case 0:
+            _context2.next = 2;
+            return Product.create(body);
+
+          case 2:
+            data = _context2.sent;
+            return _context2.abrupt("return", data);
+
+          case 4:
+          case "end":
+            return _context2.stop();
+        }
+      }
+    }, _callee2);
+  }));
+
+  return function newProduct(_x) {
+    return _ref2.apply(this, arguments);
+  };
+}(); //update single Product
+
+
+exports.newProduct = newProduct;
+
+var updateProduct = /*#__PURE__*/function () {
+  var _ref3 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee3(id, body) {
+    return _regenerator["default"].wrap(function _callee3$(_context3) {
+      while (1) {
+        switch (_context3.prev = _context3.next) {
+          case 0:
+            _context3.next = 2;
+            return Product.update(body, {
+              where: {
+                id: id
+              }
+            });
+
+          case 2:
+            return _context3.abrupt("return", body);
+
+          case 3:
+          case "end":
+            return _context3.stop();
+        }
+      }
+    }, _callee3);
+  }));
+
+  return function updateProduct(_x2, _x3) {
+    return _ref3.apply(this, arguments);
+  };
+}(); //delete single Product
+
+
+exports.updateProduct = updateProduct;
+
+var deleteProduct = /*#__PURE__*/function () {
+  var _ref4 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee4(id) {
+    return _regenerator["default"].wrap(function _callee4$(_context4) {
+      while (1) {
+        switch (_context4.prev = _context4.next) {
+          case 0:
+            _context4.next = 2;
+            return Product.destroy({
+              where: {
+                id: id
+              }
+            });
+
+          case 2:
+            return _context4.abrupt("return", '');
+
+          case 3:
+          case "end":
+            return _context4.stop();
+        }
+      }
+    }, _callee4);
+  }));
+
+  return function deleteProduct(_x4) {
+    return _ref4.apply(this, arguments);
+  };
+}(); //get single Product
+
+
+exports.deleteProduct = deleteProduct;
+
+var getProduct = /*#__PURE__*/function () {
+  var _ref5 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee5(id) {
+    var data;
+    return _regenerator["default"].wrap(function _callee5$(_context5) {
+      while (1) {
+        switch (_context5.prev = _context5.next) {
+          case 0:
+            _context5.next = 2;
+            return Product.findByPk(id);
+
+          case 2:
+            data = _context5.sent;
+            return _context5.abrupt("return", data);
+
+          case 4:
+          case "end":
+            return _context5.stop();
+        }
+      }
+    }, _callee5);
+  }));
+
+  return function getProduct(_x5) {
+    return _ref5.apply(this, arguments);
+  };
+}();
+
+exports.getProduct = getProduct;

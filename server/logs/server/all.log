@@ -2,3 +2,173 @@ info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T0
 info: Connected to the database. {"timestamp":"2021-05-28T01:41:56.321Z"}
 info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T01:54:19.582Z"}
 info: Connected to the database. {"timestamp":"2021-05-28T01:54:19.641Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T01:57:22.947Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T01:57:23.008Z"}
+error: 
+    status - 500 
+    message - ReferenceError: Productservice is not defined
+    at _callee$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\controllers\product.controller.js:33:13)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12
+    at getAllProducts (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\controllers\product.controller.js:59:17) 
+    url - /api/v1/products 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2021-05-28T01:57:31.839Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T01:58:11.913Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T01:58:11.968Z"}
+error: 
+    status - 500 
+    message - TypeError: ProductService.getAllUsers is not a function
+    at _callee$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\controllers\product.controller.js:33:35)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12
+    at getAllProducts (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\controllers\product.controller.js:59:17) 
+    url - /api/v1/products 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2021-05-28T01:58:18.105Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T01:58:44.140Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T01:58:44.196Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:23:47.986Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:23:48.271Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:24:10.895Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:24:11.021Z"}
+error: 
+    status - 500 
+    message - ValidationError: "stock" must be larger than or equal to 1 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T02:26:25.654Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:27:52.656Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:27:52.718Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:29:41.929Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:29:41.984Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T02:29:46.653Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" is not allowed to be empty 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T02:29:54.833Z"}
+error: 
+    status - 500 
+    message - ValidationError: "brand" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T02:30:07.606Z"}
+error: uncaughtException: Route.put() requires a callback function but got a [object Undefined]
+Error: Route.put() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as put] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\router\route.js:202:15)
+    at Function.proto.<computed> [as put] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\router\index.js:510:19)
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\product.route.js:35:8)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\index.js:14:39) {"error":{},"stack":"Error: Route.put() requires a callback function but got a [object Undefined]\n    at Route.<computed> [as put] (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\route.js:202:15)\n    at Function.proto.<computed> [as put] (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\index.js:510:19)\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\product.route.js:35:8)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n    at Module.load (internal/modules/cjs/loader.js:928:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n    at Module.require (internal/modules/cjs/loader.js:952:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js:14:39)","exception":true,"date":"Thu May 27 2021 21:35:04 GMT-0500 (hora de verano central)","process":{"pid":3568,"uid":null,"gid":null,"cwd":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v14.15.5","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\index.js"],"memoryUsage":{"rss":61706240,"heapTotal":33882112,"heapUsed":20374880,"external":1740218,"arrayBuffers":307546}},"os":{"loadavg":[0,0,0],"uptime":369339},"trace":[{"column":15,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\route.js","function":"Route.<computed> [as put]","line":202,"method":"<computed> [as put]","native":false},{"column":19,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.proto.<computed> [as put]","line":510,"method":"<computed> [as put]","native":false},{"column":8,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\product.route.js","function":null,"line":35,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1063,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1092,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":928,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":769,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":952,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":39,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js","function":null,"line":14,"method":null,"native":false}],"timestamp":"2021-05-28T02:35:04.512Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:35:35.107Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:35:35.163Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:40:22.615Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:40:22.668Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:40:52.442Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:40:52.509Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:42:52.218Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:42:52.320Z"}
+error: uncaughtException: signInController is not defined
+ReferenceError: signInController is not defined
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\user.route.js:27:24)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\index.js:12:36)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10) {"error":{},"stack":"ReferenceError: signInController is not defined\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\user.route.js:27:24)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n    at Module.load (internal/modules/cjs/loader.js:928:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n    at Module.require (internal/modules/cjs/loader.js:952:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js:12:36)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)","exception":true,"date":"Thu May 27 2021 21:54:18 GMT-0500 (hora de verano central)","process":{"pid":9680,"uid":null,"gid":null,"cwd":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v14.15.5","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\index.js"],"memoryUsage":{"rss":61579264,"heapTotal":33357824,"heapUsed":19688144,"external":1723653,"arrayBuffers":290981}},"os":{"loadavg":[0,0,0],"uptime":370494},"trace":[{"column":24,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\user.route.js","function":null,"line":27,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1063,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1092,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":928,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":769,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":952,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":36,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js","function":null,"line":12,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1063,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1092,"method":".js","native":false}],"timestamp":"2021-05-28T02:54:18.880Z"}
+error: uncaughtException: userController is not defined
+ReferenceError: userController is not defined
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\user.route.js:30:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\index.js:12:36)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10) {"error":{},"stack":"ReferenceError: userController is not defined\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\user.route.js:30:16)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n    at Module.load (internal/modules/cjs/loader.js:928:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n    at Module.require (internal/modules/cjs/loader.js:952:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js:12:36)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)","exception":true,"date":"Thu May 27 2021 21:55:47 GMT-0500 (hora de verano central)","process":{"pid":16332,"uid":null,"gid":null,"cwd":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v14.15.5","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\index.js"],"memoryUsage":{"rss":61648896,"heapTotal":33095680,"heapUsed":19350912,"external":1682878,"arrayBuffers":250206}},"os":{"loadavg":[0,0,0],"uptime":370582},"trace":[{"column":16,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\user.route.js","function":null,"line":30,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1063,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1092,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":928,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":769,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":952,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":36,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js","function":null,"line":12,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1063,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1092,"method":".js","native":false}],"timestamp":"2021-05-28T02:55:47.318Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:56:20.705Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:56:20.760Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:57:33.384Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:57:33.462Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T03:01:58.804Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T03:01:59.096Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed 
+    url - /api/v1/users/signin 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T03:02:06.140Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed 
+    url - /api/v1/users/signin 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T03:02:16.542Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T03:03:23.577Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T03:03:23.656Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/signin 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T03:03:33.788Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be at least 3 characters long 
+    url - /api/v1/users/signin 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T03:03:40.573Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be at least 3 characters long 
+    url - /api/v1/users/signin 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T03:03:49.463Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastName" is not allowed to be empty 
+    url - /api/v1/users/signin 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T03:04:05.919Z"}

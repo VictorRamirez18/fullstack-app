@@ -6,3 +6,109 @@ info: ::1 - - [28/May/2021:01:42:39 +0000] "GET / HTTP/1.1" 404 47 "-" "Mozilla/
 
 info: ::1 - - [28/May/2021:01:43:45 +0000] "GET /api/v1/ HTTP/1.1" 200 9 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 OPR/76.0.4017.123"
 
+info: ::1 - - [28/May/2021:01:57:31 +0000] "GET /api/v1/products HTTP/1.1" 500 64 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 OPR/76.0.4017.123"
+
+info: ::1 - - [28/May/2021:01:58:18 +0000] "GET /api/v1/products HTTP/1.1" 500 79 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 OPR/76.0.4017.123"
+
+info: ::1 - - [28/May/2021:01:58:53 +0000] "GET /api/v1/products HTTP/1.1" 200 210 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 OPR/76.0.4017.123"
+
+info: ::1 - - [28/May/2021:02:24:29 +0000] "GET /api/v1/products HTTP/1.1" 200 210 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:26:10 +0000] "POST /api/v1/products HTTP/1.1" 201 206 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:26:25 +0000] "POST /api/v1/products HTTP/1.1" 500 78 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:26:42 +0000] "POST /api/v1/products HTTP/1.1" 201 209 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:28:04 +0000] "POST /api/v1/products HTTP/1.1" - - "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:29:46 +0000] "POST /api/v1/products HTTP/1.1" 400 53 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:29:54 +0000] "POST /api/v1/products HTTP/1.1" 500 70 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:30:07 +0000] "POST /api/v1/products HTTP/1.1" 500 86 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:30:18 +0000] "POST /api/v1/products HTTP/1.1" 201 207 "-" "PostmanRuntime/7.28.0"
+
+error: uncaughtException: Route.put() requires a callback function but got a [object Undefined]
+Error: Route.put() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as put] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\router\route.js:202:15)
+    at Function.proto.<computed> [as put] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\router\index.js:510:19)
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\product.route.js:35:8)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\index.js:14:39) {"error":{},"stack":"Error: Route.put() requires a callback function but got a [object Undefined]\n    at Route.<computed> [as put] (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\route.js:202:15)\n    at Function.proto.<computed> [as put] (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\index.js:510:19)\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\product.route.js:35:8)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n    at Module.load (internal/modules/cjs/loader.js:928:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n    at Module.require (internal/modules/cjs/loader.js:952:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js:14:39)","exception":true,"date":"Thu May 27 2021 21:35:04 GMT-0500 (hora de verano central)","process":{"pid":3568,"uid":null,"gid":null,"cwd":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v14.15.5","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\index.js"],"memoryUsage":{"rss":62255104,"heapTotal":33882112,"heapUsed":20500272,"external":1752921,"arrayBuffers":307570}},"os":{"loadavg":[0,0,0],"uptime":369340},"trace":[{"column":15,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\route.js","function":"Route.<computed> [as put]","line":202,"method":"<computed> [as put]","native":false},{"column":19,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.proto.<computed> [as put]","line":510,"method":"<computed> [as put]","native":false},{"column":8,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\product.route.js","function":null,"line":35,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1063,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1092,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":928,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":769,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":952,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":39,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js","function":null,"line":14,"method":null,"native":false}]}
+info: ::1 - - [28/May/2021:02:35:45 +0000] "GET /api/v1/products/4 HTTP/1.1" 200 203 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:35:59 +0000] "PUT /api/v1/products/4 HTTP/1.1" 202 119 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:41:08 +0000] "POST /api/v1/products HTTP/1.1" 201 204 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:41:20 +0000] "POST /api/v1/products HTTP/1.1" 201 208 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:41:32 +0000] "POST /api/v1/products HTTP/1.1" 201 207 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:41:37 +0000] "GET /api/v1/products HTTP/1.1" 200 551 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:41:44 +0000] "GET /api/v1/products/3 HTTP/1.1" 200 222 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:42:00 +0000] "PUT /api/v1/products/delete/3 HTTP/1.1" 404 47 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:42:59 +0000] "PUT /api/v1/products/delete/3 HTTP/1.1" 200 63 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:02:43:16 +0000] "GET /api/v1/products HTTP/1.1" 200 389 "-" "PostmanRuntime/7.28.0"
+
+error: uncaughtException: signInController is not defined
+ReferenceError: signInController is not defined
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\user.route.js:27:24)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\index.js:12:36)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10) {"error":{},"stack":"ReferenceError: signInController is not defined\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\user.route.js:27:24)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n    at Module.load (internal/modules/cjs/loader.js:928:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n    at Module.require (internal/modules/cjs/loader.js:952:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js:12:36)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)","exception":true,"date":"Thu May 27 2021 21:54:18 GMT-0500 (hora de verano central)","process":{"pid":9680,"uid":null,"gid":null,"cwd":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v14.15.5","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\index.js"],"memoryUsage":{"rss":62177280,"heapTotal":33357824,"heapUsed":19811496,"external":1731909,"arrayBuffers":299197}},"os":{"loadavg":[0,0,0],"uptime":370494},"trace":[{"column":24,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\user.route.js","function":null,"line":27,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1063,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1092,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":928,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":769,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":952,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":36,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js","function":null,"line":12,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1063,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1092,"method":".js","native":false}]}
+error: uncaughtException: userController is not defined
+ReferenceError: userController is not defined
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\user.route.js:30:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\index.js:12:36)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10) {"error":{},"stack":"ReferenceError: userController is not defined\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\user.route.js:30:16)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n    at Module.load (internal/modules/cjs/loader.js:928:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n    at Module.require (internal/modules/cjs/loader.js:952:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js:12:36)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)","exception":true,"date":"Thu May 27 2021 21:55:47 GMT-0500 (hora de verano central)","process":{"pid":16332,"uid":null,"gid":null,"cwd":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v14.15.5","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\index.js"],"memoryUsage":{"rss":62144512,"heapTotal":33357824,"heapUsed":19474344,"external":1691134,"arrayBuffers":258422}},"os":{"loadavg":[0,0,0],"uptime":370582},"trace":[{"column":16,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\user.route.js","function":null,"line":30,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1063,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1092,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":928,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":769,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":952,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":36,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js","function":null,"line":12,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1063,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1092,"method":".js","native":false}]}
+info: ::1 - - [28/May/2021:03:00:34 +0000] "POST /api/v1/users/signin HTTP/1.1" 400 36 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:00:57 +0000] "POST /api/v1/users/signin HTTP/1.1" 400 51 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:01:03 +0000] "POST /api/v1/users/signin HTTP/1.1" 200 24 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:02:06 +0000] "POST /api/v1/users/signin HTTP/1.1" 500 62 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:02:16 +0000] "POST /api/v1/users/signin HTTP/1.1" 500 62 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:03:33 +0000] "POST /api/v1/users/signin HTTP/1.1" 500 66 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:03:40 +0000] "POST /api/v1/users/signin HTTP/1.1" 500 89 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:03:49 +0000] "POST /api/v1/users/signin HTTP/1.1" 500 89 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:04:05 +0000] "POST /api/v1/users/signin HTTP/1.1" 500 74 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:04:17 +0000] "POST /api/v1/users/signin HTTP/1.1" 400 36 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:04:23 +0000] "POST /api/v1/users/signin HTTP/1.1" 400 51 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:04:27 +0000] "POST /api/v1/users/signin HTTP/1.1" 400 36 "-" "PostmanRuntime/7.28.0"
+
+info: ::1 - - [28/May/2021:03:04:31 +0000] "POST /api/v1/users/signin HTTP/1.1" 200 24 "-" "PostmanRuntime/7.28.0"
+

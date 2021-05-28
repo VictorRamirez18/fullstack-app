@@ -2,3 +2,140 @@ info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T0
 info: Connected to the database. {"timestamp":"2021-05-28T01:41:56.321Z"}
 info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T01:54:19.582Z"}
 info: Connected to the database. {"timestamp":"2021-05-28T01:54:19.641Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T01:57:22.947Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T01:57:23.008Z"}
+error: 
+    status - 500 
+    message - ReferenceError: Productservice is not defined
+    at _callee$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\controllers\product.controller.js:33:13)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12
+    at getAllProducts (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\controllers\product.controller.js:59:17) 
+    url - /api/v1/products 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2021-05-28T01:57:31.839Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T01:58:11.913Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T01:58:11.968Z"}
+error: 
+    status - 500 
+    message - TypeError: ProductService.getAllUsers is not a function
+    at _callee$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\controllers\product.controller.js:33:35)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12
+    at getAllProducts (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\controllers\product.controller.js:59:17) 
+    url - /api/v1/products 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2021-05-28T01:58:18.105Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T01:58:44.140Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T01:58:44.196Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:23:47.986Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:23:48.271Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:24:10.895Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:24:11.021Z"}
+error: 
+    status - 500 
+    message - ValidationError: "stock" must be larger than or equal to 1 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T02:26:25.654Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:27:52.656Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:27:52.718Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:29:41.929Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:29:41.984Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T02:29:46.653Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" is not allowed to be empty 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T02:29:54.833Z"}
+error: 
+    status - 500 
+    message - ValidationError: "brand" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T02:30:07.606Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:35:04.615Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:35:35.107Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:35:35.163Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:40:22.615Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:40:22.668Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:40:52.442Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:40:52.509Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:42:52.218Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:42:52.320Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:54:19.043Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:55:47.414Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:56:20.705Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:56:20.760Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T02:57:33.384Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T02:57:33.462Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T03:01:58.804Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T03:01:59.096Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed 
+    url - /api/v1/users/signin 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T03:02:06.140Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" is not allowed 
+    url - /api/v1/users/signin 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T03:02:16.542Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T03:03:23.577Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T03:03:23.656Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/users/signin 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T03:03:33.788Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be at least 3 characters long 
+    url - /api/v1/users/signin 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T03:03:40.573Z"}
+error: 
+    status - 500 
+    message - ValidationError: "password" length must be at least 3 characters long 
+    url - /api/v1/users/signin 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T03:03:49.463Z"}
+error: 
+    status - 500 
+    message - ValidationError: "lastName" is not allowed to be empty 
+    url - /api/v1/users/signin 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T03:04:05.919Z"}

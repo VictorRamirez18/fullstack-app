@@ -7,28 +7,28 @@ export const getAllProducts = async () => {
   return data;
 };
 
-// //create new user
-// export const newUser = async (body) => {
-//   const data = await User.create(body);
-//   return data;
-// };
+//create new product
+export const newProduct = async (body) => {
+  const data = await Product.create(body);
+  return data;
+};
 
-// //update single user
-// export const updateUser = async (id, body) => {
-//   await User.update(body, {
-//     where: { id: id }
-//   });
-//   return body;
-// };
+//update single Product
+export const updateProduct = async (id, body) => {
+  await Product.update(body, {
+    where: { id: id }
+  });
+  return body;
+};
 
-// //delete single user
-// export const deleteUser = async (id) => {
-//   await User.destroy({ where: { id: id } });
-//   return '';
-// };
+//delete single Product
+export const deleteProduct = async (id) => {
+  await Product.destroy({ where: { id: id } });
+  return '';
+};
 
-// //get single user
-// export const getUser = async (id) => {
-//   const data = await User.findByPk(id);
-//   return data;
-// };
+//get single Product
+export const getProduct = async (id) => {
+  const data = await Product.findByPk(id);
+  return data;
+};

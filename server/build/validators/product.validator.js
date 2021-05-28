@@ -5,16 +5,16 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.newUserValidator = void 0;
+exports.newProductValidator = void 0;
 
 var _joi = _interopRequireDefault(require("@hapi/joi"));
 
-var newUserValidator = function newUserValidator(req, res, next) {
+var newProductValidator = function newProductValidator(req, res, next) {
   var schema = _joi["default"].object({
-    firstName: _joi["default"].string().min(3).required(),
-    lastName: _joi["default"].string().min(3).required(),
-    email: _joi["default"].string().email().min(3).required(),
-    password: _joi["default"].string().min(3).required()
+    name: _joi["default"].string().min(3).required(),
+    brand: _joi["default"].string().min(2).required(),
+    price: _joi["default"].number().min(0).required(),
+    stock: _joi["default"].number().integer().min(1).required()
   });
 
   var _schema$validate = schema.validate(req.body),
@@ -29,4 +29,4 @@ var newUserValidator = function newUserValidator(req, res, next) {
   }
 };
 
-exports.newUserValidator = newUserValidator;
+exports.newProductValidator = newProductValidator;

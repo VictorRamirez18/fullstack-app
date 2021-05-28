@@ -7,34 +7,48 @@ var _typeof = require("@babel/runtime/helpers/typeof");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+exports.signin = void 0;
 
-var _express = _interopRequireDefault(require("express"));
+var _database = _interopRequireWildcard(require("../config/database"));
 
-var signInController = _interopRequireWildcard(require("../controllers/signin.controller"));
-
-var _user = require("../validators/user.validator");
-
-var _auth = require("../middlewares/auth.middleware");
+var _httpStatusCodes = _interopRequireDefault(require("http-status-codes"));
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-// import * as userController from '../controllers/user.controller';
-var router = _express["default"].Router(); //route to singin
+var User = require('../models/user')(_database["default"], _database.DataTypes); // const bcrypt = require('bcrypt');
+// const jwt = require('jsonwebtoken');
+// const authConfig = require('../config/auth');
 
 
-router.post('/signin', _user.newUserValidator, signInController.signIn); // //route to get all users
-// router.get('', userController.getAllUsers);
-// //route to create a new user
-// router.post('', newUserValidator, userController.newUser);
-// //route to get a single user by their user id
-// router.get('/:id', userAuth, userController.getUser);
-// //route to update a single user by their user id
-// router.put('/:id', userController.updateUser);
-// //route to delete a single user by their user id
-// router.delete('/:id', userController.deleteUser);
+var signin = function signin(email, password, res) {
+  User.findOne({
+    where: {
+      email: email
+    }
+  }).then(function (user) {
+    if (!user) {
+      res.status(_httpStatusCodes["default"].BAD_REQUEST).json({
+        message: 'Usuario con este correo no encontrado'
+      });
+    } else {
+      if (password === user.password) {
+        //   let token = jwt.sign({ user: user }, authConfig.secret, {
+        //     expiresIn: authConfig.expires
+        //   });
+        res.status(_httpStatusCodes["default"].OK).json({
+          message: 'Autorizado'
+        });
+      } else {
+        res.status(_httpStatusCodes["default"].BAD_REQUEST).json({
+          message: 'Contraseña incorrecta'
+        });
+      }
+    }
+  })["catch"](function (err) {
+    res.status(_httpStatusCodes["default"].INTERNAL_SERVER_ERROR).json(err);
+  });
+};
 
-var _default = router;
-exports["default"] = _default;
+exports.signin = signin;

@@ -1,23 +1,24 @@
 import express from 'express';
 import * as productController from '../controllers/product.controller';
-import { newUserValidator } from '../validators/user.validator';
+import { newProductValidator } from '../validators/product.validator';
 import { userAuth } from '../middlewares/auth.middleware';
+import { fakeAuth } from '../middlewares/fake.middleware';
 
 const router = express.Router();
 
-//route to get all users
+//route to get all products
 router.get('', productController.getAllProducts);
 
-// //route to create a new user
-// router.post('', newUserValidator, productController.newUser);
+//route to create a new product
+router.post('', newProductValidator, fakeAuth, productController.newProduct);
 
-// //route to get a single user by their user id
-// router.get('/:id', userAuth, productController.getUser);
+//route to get a single product by their product id
+router.get('/:id', productController.getProduct);
 
-// //route to update a single user by their user id
-// router.put('/:id', productController.updateUser);
+//route to update a single product by their product id
+router.put('/:id', newProductValidator, productController.updateProduct);
 
-// //route to delete a single user by their user id
-// router.delete('/:id', productController.deleteUser);
+//route to delete a single product by their product id
+router.put('/delete/:id', productController.deleteProduct);
 
 export default router;

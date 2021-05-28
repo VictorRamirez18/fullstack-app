@@ -7,34 +7,53 @@ var _typeof = require("@babel/runtime/helpers/typeof");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+exports.signIn = void 0;
 
-var _express = _interopRequireDefault(require("express"));
+var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 
-var signInController = _interopRequireWildcard(require("../controllers/signin.controller"));
+var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/asyncToGenerator"));
 
-var _user = require("../validators/user.validator");
+var _httpStatusCodes = _interopRequireDefault(require("http-status-codes"));
 
-var _auth = require("../middlewares/auth.middleware");
+var SignIn = _interopRequireWildcard(require("../services/signin.service"));
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-// import * as userController from '../controllers/user.controller';
-var router = _express["default"].Router(); //route to singin
+var signIn = /*#__PURE__*/function () {
+  var _ref = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee(req, res, next) {
+    var _req$body, email, password;
 
+    return _regenerator["default"].wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            _req$body = req.body, email = _req$body.email, password = _req$body.password;
+            _context.prev = 1;
+            _context.next = 4;
+            return SignIn.signin(email, password, res);
 
-router.post('/signin', _user.newUserValidator, signInController.signIn); // //route to get all users
-// router.get('', userController.getAllUsers);
-// //route to create a new user
-// router.post('', newUserValidator, userController.newUser);
-// //route to get a single user by their user id
-// router.get('/:id', userAuth, userController.getUser);
-// //route to update a single user by their user id
-// router.put('/:id', userController.updateUser);
-// //route to delete a single user by their user id
-// router.delete('/:id', userController.deleteUser);
+          case 4:
+            _context.next = 9;
+            break;
 
-var _default = router;
-exports["default"] = _default;
+          case 6:
+            _context.prev = 6;
+            _context.t0 = _context["catch"](1);
+            next(_context.t0);
+
+          case 9:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee, null, [[1, 6]]);
+  }));
+
+  return function signIn(_x, _x2, _x3) {
+    return _ref.apply(this, arguments);
+  };
+}();
+
+exports.signIn = signIn;

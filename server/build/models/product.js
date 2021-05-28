@@ -44,7 +44,9 @@ module.exports = function (sequelize, DataTypes) {
     stock: DataTypes.INTEGER
   }, {
     sequelize: sequelize,
-    modelName: 'product'
+    modelName: 'product',
+    paranoid: true,
+    deletedAt: 'destroyTime'
   });
   return product;
 };
