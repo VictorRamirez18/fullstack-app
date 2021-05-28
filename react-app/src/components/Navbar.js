@@ -48,10 +48,10 @@ const Login = () => {
           }`}
         >
           <img src="#" alt="avatarUser" />
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" />
-          <label htmlFor="password">Password</label>
-          <input type="password" id="password" />
+          <label htmlFor="nameUser">Name</label>
+          <input type="text" id="nameUser" />
+          <label htmlFor="passwordUser">Password</label>
+          <input type="password" id="passwordUser" />
           <button className="bg-blue-200 p-1 text-black" onClick={handleSignIn}>
             Signin
           </button>

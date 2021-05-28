@@ -13,6 +13,8 @@ var _user = _interopRequireDefault(require("./user.route"));
 
 var _product = _interopRequireDefault(require("./product.route"));
 
+var _buy = _interopRequireDefault(require("./buy.route"));
+
 var router = _express["default"].Router();
 
 /**
@@ -26,6 +28,7 @@ var routes = function routes() {
   });
   router.use('/users', _user["default"]);
   router.use('/products', _product["default"]);
+  router.use('/buys', _buy["default"]);
   return router;
 };
 

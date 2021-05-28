@@ -172,3 +172,625 @@ error:
     method - POST 
     IP - ::1
    {"timestamp":"2021-05-28T03:04:05.919Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T04:30:24.999Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T04:30:25.502Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T14:36:30.945Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T14:36:31.602Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T16:05:18.255Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:05:29.529Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:18:03.889Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T16:26:29.665Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:27:00.774Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:27:30.171Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:29:44.921Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:30:35.015Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:31:29.498Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:31:59.484Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:32:21.667Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:33:47.077Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:35:23.075Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T16:35:28.474Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T16:38:04.288Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:38:24.940Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:41:38.626Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:41:48.947Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T16:42:39.161Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:42:47.030Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:44:07.844Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T16:44:09.993Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:48:11.298Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:48:38.192Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:48:58.847Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:52:12.487Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T16:52:24.881Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T16:52:52.861Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:52:56.489Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T16:59:53.756Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T17:01:10.386Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T17:04:49.204Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T17:05:15.020Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T17:05:19.552Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T17:07:07.991Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T17:07:18.804Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T17:09:37.620Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T17:09:42.162Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T17:09:53.492Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T17:09:56.676Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T17:10:06.313Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T17:10:09.291Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T17:10:38.403Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T17:10:46.844Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T17:10:52.807Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T17:10:55.520Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T17:11:00.959Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T17:11:05.646Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T17:21:56.792Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T17:22:05.217Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T17:22:18.125Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T17:22:22.556Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T17:22:29.352Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T17:30:08.090Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T17:30:08.465Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T17:38:13.326Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T17:38:13.404Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T17:58:28.688Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T17:58:28.751Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T17:58:37.430Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T17:58:39.399Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T17:58:41.626Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T18:32:42.806Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T18:32:42.875Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" is not allowed to be empty 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T18:48:53.396Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" is not allowed to be empty 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T18:49:04.123Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" is not allowed to be empty 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T18:49:09.218Z"}
+error: 
+    status - 500 
+    message - ValidationError: "id" is not allowed 
+    url - /api/v1/products/17 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T18:49:21.049Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" is not allowed to be empty 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T18:52:28.437Z"}
+error: 
+    status - 500 
+    message - ValidationError: "createdAt" is not allowed 
+    url - /api/v1/products/19 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T18:52:38.893Z"}
+error: 
+    status - 500 
+    message - ValidationError: "createdAt" is not allowed 
+    url - /api/v1/products/17 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T18:53:44.497Z"}
+error: 
+    status - 500 
+    message - ValidationError: "id" is not allowed 
+    url - /api/v1/products/18 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T19:06:44.836Z"}
+error: 
+    status - 500 
+    message - ValidationError: "id" is not allowed 
+    url - /api/v1/products/17 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T19:08:04.644Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T19:09:05.365Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T19:09:05.686Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" is not allowed to be empty 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-28T19:18:02.937Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T19:40:09.088Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T19:42:16.411Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T19:43:57.809Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T19:44:16.502Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T19:50:46.142Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T19:54:25.202Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T19:54:32.051Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T20:00:52.748Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T20:00:53.184Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T20:03:58.065Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T20:08:16.445Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T20:08:41.616Z"}
+error: 
+    status - 500 
+    message - ValidationError: "brand" length must be at least 2 characters long 
+    url - /api/v1/products/2 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T20:08:52.633Z"}
+error: 
+    status - 500 
+    message - ValidationError: "stock" must be larger than or equal to 1 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T20:10:08.070Z"}
+error: 
+    status - 500 
+    message - ValidationError: "stock" must be larger than or equal to 1 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T20:10:17.197Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T20:10:45.763Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-28T20:34:44.442Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T20:39:45.393Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T20:39:45.699Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T20:43:15.705Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T20:43:39.278Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T20:50:43.514Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T20:50:43.586Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T22:26:51.334Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T22:26:51.722Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-28T22:42:09.422Z"}
+error: uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\router\route.js:202:15)
+    at Function.proto.<computed> [as get] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\router\index.js:510:19)
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\buy.route.js:26:8)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\index.js:16:35) {"error":{},"stack":"Error: Route.get() requires a callback function but got a [object Undefined]\n    at Route.<computed> [as get] (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\route.js:202:15)\n    at Function.proto.<computed> [as get] (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\index.js:510:19)\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\buy.route.js:26:8)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n    at Module.load (internal/modules/cjs/loader.js:928:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n    at Module.require (internal/modules/cjs/loader.js:952:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js:16:35)","exception":true,"date":"Fri May 28 2021 18:24:22 GMT-0500 (hora de verano central)","process":{"pid":5700,"uid":null,"gid":null,"cwd":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v14.15.5","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\index.js"],"memoryUsage":{"rss":62324736,"heapTotal":33619968,"heapUsed":20686752,"external":1757765,"arrayBuffers":325093}},"os":{"loadavg":[0,0,0],"uptime":444298},"trace":[{"column":15,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\route.js","function":"Route.<computed> [as get]","line":202,"method":"<computed> [as get]","native":false},{"column":19,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.proto.<computed> [as get]","line":510,"method":"<computed> [as get]","native":false},{"column":8,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\buy.route.js","function":null,"line":26,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1063,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1092,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":928,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":769,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":952,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":35,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js","function":null,"line":16,"method":null,"native":false}],"timestamp":"2021-05-28T23:24:23.121Z"}

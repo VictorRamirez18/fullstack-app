@@ -198,7 +198,7 @@ var deleteProduct = /*#__PURE__*/function () {
           case 3:
             res.status(_httpStatusCodes["default"].OK).json({
               code: _httpStatusCodes["default"].OK,
-              data: [],
+              data: req.body,
               message: 'Product deleted successfully'
             });
             _context5.next = 9;

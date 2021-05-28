@@ -11,6 +11,7 @@ var _joi = _interopRequireDefault(require("@hapi/joi"));
 
 var newProductValidator = function newProductValidator(req, res, next) {
   var schema = _joi["default"].object({
+    id: _joi["default"].number().integer().min(0),
     name: _joi["default"].string().min(3).required(),
     brand: _joi["default"].string().min(2).required(),
     price: _joi["default"].number().min(0).required(),
