@@ -2,6 +2,7 @@ import express from 'express';
 const router = express.Router();
 
 import userRoute from './user.route';
+import productRoute from './product.route';
 /**
  * Function contains Application routes
  *
@@ -12,6 +13,7 @@ const routes = () => {
     res.json('Welcome');
   });
   router.use('/users', userRoute);
+  router.use('/products', productRoute);
 
   return router;
 };
