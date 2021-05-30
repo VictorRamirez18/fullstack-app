@@ -4,13 +4,23 @@ import Footer from "../components/Footer";
 import { useDispatch, useSelector } from "react-redux";
 import Spinner from "../components/Spinner";
 import { getBuys } from "../redux/actions/buys.action";
+import { useHistory } from "react-router-dom";
 
 function Buys() {
   const loading = useSelector((state) => state.buys.loading);
+  const logged = useSelector((state) => state.signin.logged);
+  const history = useHistory();
+
+  useEffect(() => {
+    if (!logged) {
+      history.push("/");
+    }
+  }, [logged, history]);
+
   return (
     <div className="flex flex-col justify-center">
       <Navbar />
-      <div className="my-12 min-h-screen">
+      <div className="overflow-x-scroll md:overflow-auto md:p-2 my-12 min-h-screen">
         <TableBuys loading={loading} />
       </div>
       {loading && <Spinner />}

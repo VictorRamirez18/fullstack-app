@@ -31,31 +31,30 @@ var getAllBuys = /*#__PURE__*/function () {
         switch (_context.prev = _context.next) {
           case 0:
             _context.prev = 0;
-            console.log(req.body);
-            _context.next = 4;
+            _context.next = 3;
             return BuyService.getAllBuys();
 
-          case 4:
+          case 3:
             data = _context.sent;
             res.status(_httpStatusCodes["default"].OK).json({
               code: _httpStatusCodes["default"].OK,
               data: data,
               message: 'All buys fetched successfully'
             });
-            _context.next = 11;
+            _context.next = 10;
             break;
 
-          case 8:
-            _context.prev = 8;
+          case 7:
+            _context.prev = 7;
             _context.t0 = _context["catch"](0);
             next(_context.t0);
 
-          case 11:
+          case 10:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 8]]);
+    }, _callee, null, [[0, 7]]);
   }));
 
   return function getAllBuys(_x, _x2, _x3) {
@@ -86,7 +85,7 @@ var newBuy = /*#__PURE__*/function () {
             res.status(_httpStatusCodes["default"].CREATED).json({
               code: _httpStatusCodes["default"].CREATED,
               data: data,
-              message: 'Buy created successfully'
+              message: 'Successful purchase'
             });
             _context2.next = 13;
             break;

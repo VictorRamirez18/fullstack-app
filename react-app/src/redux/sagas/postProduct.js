@@ -2,13 +2,13 @@ import { call, put, takeEvery } from "redux-saga/effects";
 
 const apiUrl = "http://localhost:3001/api/v1/products";
 let product = {};
-// let token = ""
+let token = null;
 
 function getApi() {
   return fetch(apiUrl, {
     method: "POST",
     headers: {
-      Authorization: "token",
+      Authorization: token,
       Accept: "application/json",
       "Content-Type": "application/json",
     },
@@ -22,7 +22,7 @@ function getApi() {
 
 function* fetchProduct(action) {
   product = action.payload;
-  //   token = action.token;
+  token = action.token;
 
   try {
     const product = yield call(getApi);

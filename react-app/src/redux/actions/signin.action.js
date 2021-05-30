@@ -18,3 +18,10 @@ export function signOut() {
     type: type.SIGNOUT,
   };
 }
+
+export function toogleAlreadySignIn(boolean) {
+  return {
+    type: type.ALREADY_SIGNIN,
+    boolean: boolean,
+  };
+}

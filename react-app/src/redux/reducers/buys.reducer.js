@@ -7,6 +7,7 @@ const initialState = {
   code: 0,
   error: null,
   buyed: false,
+  previousError: null,
 };
 
 export default function buyProduct(state = initialState, action) {
@@ -16,6 +17,8 @@ export default function buyProduct(state = initialState, action) {
       return {
         ...state,
         loading: true,
+        message: null,
+        code: 0,
         error: null,
       };
     case type.GET_BUYS_SUCCESS:
@@ -26,13 +29,14 @@ export default function buyProduct(state = initialState, action) {
         code: action.buys.code,
         message: action.buys.message,
         error: null,
-        buyed: true,
+        // buyed: true,
       };
     case type.GET_BUYS_FAILED:
       return {
         ...state,
         loading: false,
         error: action.buy.message,
+        code: action.code,
       };
 
     //post buy
@@ -41,6 +45,8 @@ export default function buyProduct(state = initialState, action) {
         ...state,
         loading: true,
         error: null,
+        message: null,
+        code: 0,
       };
     case type.POST_BUY_SUCCESS:
       state.buys.push(action.buy.data);
@@ -53,7 +59,9 @@ export default function buyProduct(state = initialState, action) {
         buyed: true,
       };
     case type.POST_BUY_FAILED:
-      console.log("action", action);
+      if (action.error === "jwt malformed") {
+        action.error = "You need to login to buy some product";
+      }
       return {
         ...state,
         loading: false,
@@ -67,6 +75,22 @@ export default function buyProduct(state = initialState, action) {
         buyed: action.payload,
         message: null,
         code: 0,
+      };
+    //Set previous error
+    case type.SET_PREVIOUS_ERROR:
+      return {
+        ...state,
+        previousError: action.payload,
+      };
+
+    //Clear messages buys
+    case type.CLEAR_MESSAGES_BUYS:
+      return {
+        ...state,
+        error: null,
+        message: null,
+        code: 0,
+        previousError: null,
       };
 
     default:

@@ -9,13 +9,13 @@ let updateProduct = {
   stock: 0,
   image: "",
 };
-// let token = ""
+let token = null;
 
 function getApi() {
   return fetch(apiUrl, {
     method: "PUT",
     headers: {
-      Authorization: "token",
+      Authorization: token,
       Accept: "application/json",
       "Content-Type": "application/json",
     },
@@ -33,7 +33,7 @@ function* fetchProduct(action) {
     updateProduct[i] = action.payload[i];
   }
   apiUrl = `http://localhost:3001/api/v1/products/${id}`;
-  //   token = action.token;
+  token = action.token;
   try {
     const product = yield call(getApi);
     if (product.code !== 202)

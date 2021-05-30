@@ -2,6 +2,8 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { toogleModal } from "../redux/actions/modals.action";
 import { signOut } from "../redux/actions/signin.action";
+import { clearMessagesBuys } from "../redux/actions/buys.action";
+import { FaSignOutAlt } from "react-icons/fa";
 
 function Modal() {
   const dispatch = useDispatch();
@@ -18,8 +20,9 @@ function Modal() {
     }
   };
 
-  const handleAccept = () => {
-    dispatch(signOut());
+  const handleAccept = async () => {
+    await dispatch(signOut());
+    await dispatch(clearMessagesBuys());
     dispatch(toogleModal(false));
   };
   return (
@@ -31,25 +34,24 @@ function Modal() {
       onClick={handleClick}
     >
       <div
-        className="bg-white w-1/2 h-1/2 p-12 flex flex-col items-center gap-2"
+        className="bg-white w-1/2 h-1/2 p-12 flex flex-col justify-around items-center gap-2"
         id="modal-content"
       >
-        <button
-          id="closebutton"
-          type="button"
-          className="focus:outline-none bg-red-200 p-2"
-          onClick={handleCloseModal}
-        >
-          CERRAR
-        </button>
+        <FaSignOutAlt className="text-4xl animate-pulse" />
         <h2 className="text-2xl font-medium">
           Are you sure you want to signout?
         </h2>
         <div className="flex p-2 gap-2 justify-around  w-full my-4">
-          <button className="bg-blue-400 p-1 w-4/12" onClick={handleAccept}>
+          <button
+            className="bg-red-400 text-white rounded-md p-1 w-4/12"
+            onClick={handleAccept}
+          >
             Yes
           </button>
-          <button className="bg-blue-400 p-1 w-4/12" onClick={handleCloseModal}>
+          <button
+            className="bg-blue-400 text-white rounded-md p-1 w-4/12"
+            onClick={handleCloseModal}
+          >
             No
           </button>
         </div>

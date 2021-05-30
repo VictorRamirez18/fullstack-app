@@ -3,10 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { MdModeEdit } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 import { putFormAdminState } from "../redux/actions/formAdminState.action";
-import { deleteProduct, getProducts } from "../redux/actions/products.action";
+import { getProducts } from "../redux/actions/products.action";
 import {
   productModalDelete,
-  toogleModal,
+  toogleModalDelete,
 } from "../redux/actions/modals.action";
 
 function TableAdmin() {
@@ -16,7 +16,7 @@ function TableAdmin() {
 
   useEffect(() => {
     if (products.length === 0) dispatch(getProducts());
-  }, [dispatch]);
+  }, [dispatch, products]);
 
   return (
     <table className="table-auto w-full border-collapse text-center">
@@ -46,11 +46,7 @@ const RowProduct = ({ product }) => {
   const formAdminState = useSelector((state) => state.formAdminState.product);
   const editingRedux = useSelector((state) => state.formAdminState.editing);
 
-  const testId = () => {
-    if (product.id === formAdminState.id) return editingRedux;
-  };
-
-  const [editing, setEditing] = useState(editingRedux ? testId() : false);
+  const [editing, setEditing] = useState(false);
 
   const dispatch = useDispatch();
 
@@ -61,8 +57,13 @@ const RowProduct = ({ product }) => {
 
   const deletedProduct = () => {
     dispatch(productModalDelete(product));
-    dispatch(toogleModal(true));
+    dispatch(toogleModalDelete(true));
   };
+
+  useEffect(() => {
+    if (product.id === formAdminState.id) setEditing(editingRedux);
+  }, [editingRedux, formAdminState, product.id]);
+
   return (
     <tr>
       <td className="border border-black">{product.id}</td>

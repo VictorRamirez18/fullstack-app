@@ -7,6 +7,13 @@ export function toogleModal(boolean) {
   };
 }
 
+export function toogleModalDelete(boolean) {
+  return {
+    type: type.TOOGLE_MODAL_DELETE,
+    payload: boolean,
+  };
+}
+
 export function productModalDelete(product) {
   return {
     type: type.PRODUCT_MODAL_DELETE,

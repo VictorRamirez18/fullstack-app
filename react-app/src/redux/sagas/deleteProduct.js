@@ -2,12 +2,13 @@ import { call, put, takeEvery } from "redux-saga/effects";
 
 let apiUrl = "";
 let productDeleting = {};
+let token = null;
 
 function getApi() {
   return fetch(apiUrl, {
     method: "PUT",
     headers: {
-      Authorization: "Token tokenid",
+      Authorization: token,
       Accept: "application/json",
       "Content-Type": "application/json",
     },
@@ -21,11 +22,18 @@ function getApi() {
 
 function* fetchProduct(action) {
   let id = action.payload.id;
+  token = action.token;
   apiUrl = `http://localhost:3001/api/v1/products/delete/${id}`;
   productDeleting = JSON.stringify(action.payload);
   try {
     const product = yield call(getApi);
-    yield put({ type: "DELETE_PRODUCT_SUCCESS", product: product });
+    if (product.code !== 200)
+      yield put({
+        type: "DELETE_PRODUCT_FAILED",
+        code: product.code,
+        message: product.message,
+      });
+    else yield put({ type: "DELETE_PRODUCT_SUCCESS", product: product });
   } catch (e) {
     yield put({ type: "DELETE_PRODUCT_FAILED", message: e });
   }

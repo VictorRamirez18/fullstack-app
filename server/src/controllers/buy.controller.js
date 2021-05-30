@@ -4,7 +4,6 @@ import * as ProductService from '../services/product.service';
 
 export const getAllBuys = async (req, res, next) => {
   try {
-    console.log(req.body);
     const data = await BuyService.getAllBuys();
     res.status(HttpStatus.OK).json({
       code: HttpStatus.OK,
@@ -23,7 +22,7 @@ export const newBuy = async (req, res, next) => {
     res.status(HttpStatus.CREATED).json({
       code: HttpStatus.CREATED,
       data: data,
-      message: 'Buy created successfully'
+      message: 'Successful purchase'
     });
   } catch (error) {
     next(error);

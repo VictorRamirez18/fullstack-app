@@ -6,10 +6,11 @@ export function getProducts() {
   };
 }
 
-export function postProduct(product) {
+export function postProduct(product, token) {
   return {
     type: type.POST_PRODUCTS_REQUESTED,
     payload: product,
+    token: token,
   };
 }
 
@@ -21,17 +22,19 @@ export function postProduct(product) {
 //   };
 // }
 
-export function putProduct(product) {
+export function putProduct(product, token) {
   return {
     type: type.PUT_PRODUCT_REQUESTED,
     payload: product,
+    token: token,
   };
 }
 
-export function deleteProduct(product) {
+export function deleteProduct(product, token) {
   return {
     type: type.DELETE_PRODUCT_REQUESTED,
     payload: product,
+    token: token,
   };
 }
 
@@ -39,5 +42,11 @@ export function getProduct(id) {
   return {
     type: type.GET_PRODUCT_REQUESTED,
     payload: id,
+  };
+}
+
+export function clearState() {
+  return {
+    type: type.CLEAR_STATE,
   };
 }

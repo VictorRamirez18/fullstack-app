@@ -16,6 +16,9 @@ export default function products(state = initialState, action) {
       return {
         ...state,
         loading: true,
+        message: null,
+        error: null,
+        code: 0,
       };
     case type.GET_PRODUCTS_SUCCESS:
       return {
@@ -39,6 +42,9 @@ export default function products(state = initialState, action) {
       return {
         ...state,
         loading: true,
+        message: null,
+        code: 0,
+        error: null,
       };
     case type.POST_PRODUCTS_SUCCESS:
       state.products.push(action.product.data);
@@ -62,6 +68,9 @@ export default function products(state = initialState, action) {
       return {
         ...state,
         loading: true,
+        message: null,
+        code: 0,
+        error: null,
       };
     case type.PUT_PRODUCT_SUCCESS:
       const id = action.product.data.id;
@@ -89,6 +98,9 @@ export default function products(state = initialState, action) {
       return {
         ...state,
         loading: true,
+        message: null,
+        code: 0,
+        error: null,
       };
     case type.DELETE_PRODUCT_SUCCESS:
       const deletedProduct = action.product.data;
@@ -136,6 +148,16 @@ export default function products(state = initialState, action) {
         loading: false,
         error: action.message,
         code: action.code,
+      };
+
+    //clear
+    case type.CLEAR_STATE:
+      return {
+        ...state,
+        loading: false,
+        error: null,
+        message: null,
+        code: 0,
       };
 
     default:

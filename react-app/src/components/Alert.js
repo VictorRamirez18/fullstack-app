@@ -11,22 +11,20 @@ function Alert() {
   const [hidden, setHidden] = useState(true);
 
   useEffect(() => {
-    let exceptions = [
-      "Product fetched successfully",
-      "All products fetched successfully",
-    ];
-
-    if (!loading && !exceptions.includes(message) && code !== 0)
+    let exceptions = ["All products fetched successfully"];
+    if (message === "Product deleted successfully") {
       setHidden(false);
+      return false;
+    }
+    if (
+      !loading &&
+      !exceptions.includes(message) &&
+      code !== 0 &&
+      code !== 200
+    ) {
+      setHidden(false);
+    }
   }, [code, loading, message]);
-
-  // useEffect(() => {
-  //   let mounted = true;
-  //   // if (!hidden) setTimeout(() => setHidden(true), 3000);
-  //   return () => {
-  //     mounted = false;
-  //   };
-  // }, [hidden]);
 
   let testCodeSucces = [200, 201, 202].includes(code);
 
@@ -41,6 +39,7 @@ function Alert() {
           hidden ? "hidden" : ""
         }`}
         role="alert"
+        onClick={() => setHidden(true)}
       >
         <strong className="font-bold">
           {testCodeSucces ? "Success" : "Error"}

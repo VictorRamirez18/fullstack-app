@@ -17,8 +17,6 @@ var _product2 = require("../validators/product.validator");
 
 var _auth = require("../middlewares/auth.middleware");
 
-var _fake = require("../middlewares/fake.middleware");
-
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
@@ -28,12 +26,12 @@ var router = _express["default"].Router(); //route to get all products
 
 router.get('', productController.getAllProducts); //route to create a new product
 
-router.post('', _product2.newProductValidator, _fake.fakeAuth, productController.newProduct); //route to get a single product by their product id
+router.post('', _product2.newProductValidator, _auth.userAuth, productController.newProduct); //route to get a single product by their product id
 
 router.get('/:id', productController.getProduct); //route to update a single product by their product id
 
-router.put('/:id', _product2.newProductValidator, productController.updateProduct); //route to delete a single product by their product id
+router.put('/:id', _product2.newProductValidator, _auth.userAuth, productController.updateProduct); //route to delete a single product by their product id
 
-router.put('/delete/:id', productController.deleteProduct);
+router.put('/delete/:id', _auth.userAuth, productController.deleteProduct);
 var _default = router;
 exports["default"] = _default;

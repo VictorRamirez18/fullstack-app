@@ -15,6 +15,8 @@ var _httpStatusCodes = _interopRequireDefault(require("http-status-codes"));
 
 var _jsonwebtoken = _interopRequireDefault(require("jsonwebtoken"));
 
+var authConfig = require('../config/auth');
+
 var userAuth = /*#__PURE__*/function () {
   var _ref = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee(req, res, next) {
     var bearerToken, _yield$jwt$verify, user;
@@ -38,7 +40,7 @@ var userAuth = /*#__PURE__*/function () {
 
           case 4:
             _context.next = 6;
-            return _jsonwebtoken["default"].verify(bearerToken, 'your-secret-key');
+            return _jsonwebtoken["default"].verify(bearerToken, authConfig.secret);
 
           case 6:
             _yield$jwt$verify = _context.sent;

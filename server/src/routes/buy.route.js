@@ -1,8 +1,6 @@
 import express from 'express';
 import * as buyController from '../controllers/buy.controller';
-// import { newProductValidator } from '../validators/product.validator';
-// import { userAuth } from '../middlewares/auth.middleware';
-// import { fakeAuth } from '../middlewares/fake.middleware';
+import { userAuth } from '../middlewares/auth.middleware';
 
 const router = express.Router();
 
@@ -10,6 +8,6 @@ const router = express.Router();
 router.get('', buyController.getAllBuys);
 
 //route to create a new buy
-router.post('', buyController.newBuy);
+router.post('', userAuth, buyController.newBuy);
 
 export default router;

@@ -1,20 +1,36 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { setPreviousError } from "../redux/actions/buys.action";
 
 function AlertBuys() {
+  const dispatch = useDispatch();
   const message = useSelector((state) => state.buys.message);
   const code = useSelector((state) => state.buys.code);
   const error = useSelector((state) => state.buys.error);
   const loading = useSelector((state) => state.buys.loading);
+  const previousError = useSelector((state) => state.buys.previousError);
 
   const [hidden, setHidden] = useState(true);
 
   useEffect(() => {
+    if (error === previousError && message !== "Successful purchase") {
+      return false;
+    }
     const exceptions = ["All buys fetched successfully"];
-    if (!loading && !exceptions.includes(message) && code !== 0)
+    if (!loading && !exceptions.includes(message) && code !== 0) {
       setHidden(false);
-  }, [code, loading, message]);
+      dispatch(setPreviousError(error));
+    }
+  }, [dispatch, code, loading, message, error, previousError]);
+
+  useEffect(() => {
+    if (!hidden) {
+      setTimeout(() => {
+        setHidden(true);
+      }, 900);
+    }
+  }, [hidden]);
 
   let testCodeSucces = [200, 201, 202].includes(code);
 

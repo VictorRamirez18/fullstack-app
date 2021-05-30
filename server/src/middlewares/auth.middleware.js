@@ -1,5 +1,6 @@
 import HttpStatus from 'http-status-codes';
 import jwt from 'jsonwebtoken';
+const authConfig = require('../config/auth');
 
 export const userAuth = async (req, res, next) => {
   try {
@@ -11,7 +12,7 @@ export const userAuth = async (req, res, next) => {
       };
     // bearerToken = bearerToken.split(' ')[1];
 
-    const { user } = await jwt.verify(bearerToken, 'your-secret-key');
+    const { user } = await jwt.verify(bearerToken, authConfig.secret);
     res.locals.user = user;
     res.locals.token = bearerToken;
     next();

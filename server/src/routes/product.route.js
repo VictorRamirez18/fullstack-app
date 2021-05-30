@@ -2,7 +2,6 @@ import express from 'express';
 import * as productController from '../controllers/product.controller';
 import { newProductValidator } from '../validators/product.validator';
 import { userAuth } from '../middlewares/auth.middleware';
-import { fakeAuth } from '../middlewares/fake.middleware';
 
 const router = express.Router();
 
@@ -10,15 +9,20 @@ const router = express.Router();
 router.get('', productController.getAllProducts);
 
 //route to create a new product
-router.post('', newProductValidator, fakeAuth, productController.newProduct);
+router.post('', newProductValidator, userAuth, productController.newProduct);
 
 //route to get a single product by their product id
 router.get('/:id', productController.getProduct);
 
 //route to update a single product by their product id
-router.put('/:id', newProductValidator, productController.updateProduct);
+router.put(
+  '/:id',
+  newProductValidator,
+  userAuth,
+  productController.updateProduct
+);
 
 //route to delete a single product by their product id
-router.put('/delete/:id', productController.deleteProduct);
+router.put('/delete/:id', userAuth, productController.deleteProduct);
 
 export default router;

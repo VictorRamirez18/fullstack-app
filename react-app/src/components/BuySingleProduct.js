@@ -10,6 +10,7 @@ function BuySingleProduct({ id }) {
   const [amount, setAmount] = useState(1);
 
   const buyed = useSelector((state) => state.buys.buyed);
+  const token = useSelector((state) => state.signin.token);
 
   const singleProduct = useSelector((state) => state.products.singleProduct);
   if (singleProduct.id !== undefined) {
@@ -20,7 +21,7 @@ function BuySingleProduct({ id }) {
   const handleBuy = () => {
     singleProduct.amount = +amount;
     singleProduct.total = singleProduct.amount * singleProduct.price;
-    dispatch(buyProduct(singleProduct));
+    dispatch(buyProduct(singleProduct, token));
   };
 
   useEffect(() => {
@@ -37,20 +38,26 @@ function BuySingleProduct({ id }) {
 
   return (
     <div className="flex flex-col items-center bg-gray-200 min-h-screen">
-      <div className="flex w-11/12 border border-black h-64 my-32 border-collapse">
-        <div className="w-1/3 flex h-full p-4 border border-black">
-          <img src={singleProduct.image} alt="imageProduct" />
+      <div className="bg-blue-300 flex w-11/12 flex-wrap border border-black h-auto lg:h-64 my-32 border-collapse">
+        <div className="w-full sm:w-1/2 lg:w-1/3 flex h-64 lg:h-full p-4 border border-black">
+          <img
+            src={singleProduct.image}
+            alt="imageProduct"
+            className="w-full object-cover"
+          />
         </div>
-        <div className="w-1/3 flex flex-col h-full justify-around gap-2 p-4 border border-black">
-          <h2>{singleProduct.name}</h2>
-          <h2>{singleProduct.brand}</h2>
-          <h2>{singleProduct.price}</h2>
+
+        <div className="w-full sm:w-1/2 lg:w-1/3 flex flex-col h-64 lg:h-full justify-around items-center sm:items-start gap-2 p-4 border border-black">
+          <h2 className="text-2xl font-medium">{singleProduct.name}</h2>
+          <h2 className="text-xl">{singleProduct.brand}</h2>
+          <h2 className="text-3xl">${singleProduct.price}</h2>
         </div>
-        <div className="w-1/3 flex flex-col h-full justify-around gap-2 p-4 border border-black">
-          <h2>{singleProduct.stock}</h2>
+
+        <div className="w-full lg:w-1/3 flex flex-col h-64 lg:h-full justify-around items-center lg:items-start text-center lg:text-left gap-2 p-4 border border-black">
+          <h2 className="text-xl">Stock: {singleProduct.stock}</h2>
           <Select setAmount={(amount, setAmount)} />
           <button
-            className="bg-blue-400 py-1 px-2 rounded-md w-4/12"
+            className="bg-blue-600 text-white py-1 px-2 rounded-md w-full sm:w-4/12"
             onClick={handleBuy}
           >
             Comprar
@@ -71,12 +78,15 @@ const Select = ({ amount, setAmount }) => {
 
   return (
     <div>
-      <label htmlFor="selectAmount">Cantidad: </label>
+      <label htmlFor="selectAmount" className="text-xl">
+        Cantidad:{" "}
+      </label>
       <select
         name="selectAmount"
         id="selectAmount"
         onChange={handleSelect}
         value={amount}
+        className="p-1"
       >
         {amountsOptionsSelect.map((number, index) => {
           return (
