@@ -1,8 +1,21 @@
 import * as type from "../types";
 
-export function BuyProduct(product) {
+export function getBuys() {
   return {
-    type: type.BUY_PRODUCT_REQUESTED,
-    payload: product,
+    type: type.GET_BUYS_REQUESTED,
+  };
+}
+
+export function buyProduct(buy) {
+  return {
+    type: type.POST_BUY_REQUESTED,
+    payload: buy,
+  };
+}
+
+export function toogleBuyed(boolean) {
+  return {
+    type: type.TOOGLE_BUYED,
+    payload: boolean,
   };
 }

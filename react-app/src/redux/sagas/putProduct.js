@@ -7,6 +7,7 @@ let updateProduct = {
   brand: "",
   price: 0,
   stock: 0,
+  image: "",
 };
 // let token = ""
 

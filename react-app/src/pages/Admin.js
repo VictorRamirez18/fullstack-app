@@ -5,6 +5,7 @@ import FormAdmin from "../components/FormAdmin";
 import TableAdmin from "../components/TableAdmin";
 import Alert from "../components/Alert";
 import Spinner from "../components/Spinner";
+import ModalDelete from "../components/ModalDelete";
 import { useSelector } from "react-redux";
 
 function Admin() {
@@ -18,6 +19,7 @@ function Admin() {
         {loading && <Spinner />}
       </div>
       <Alert />
+      <ModalDelete />
       <Footer />
     </div>
   );

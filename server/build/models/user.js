@@ -32,14 +32,7 @@ module.exports = function (sequelize, DataTypes) {
 
     (0, _createClass2["default"])(user, null, [{
       key: "associate",
-      value:
-      /**
-       * Helper method for defining associations.
-       * This method is not a part of Sequelize lifecycle.
-       * The `models/index` file will call this method automatically.
-       */
-      function associate(models) {// define association here
-      }
+      value: function associate(models) {}
     }]);
     return user;
   }(Model);
@@ -48,6 +41,7 @@ module.exports = function (sequelize, DataTypes) {
     firstName: DataTypes.STRING,
     lastName: DataTypes.STRING,
     email: DataTypes.STRING,
+    image: DataTypes.STRING,
     password: DataTypes.STRING
   }, {
     sequelize: sequelize,

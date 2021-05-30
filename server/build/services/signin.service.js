@@ -23,6 +23,12 @@ var User = require('../models/user')(_database["default"], _database.DataTypes);
 
 
 var signin = function signin(email, password, res) {
+  var userEscencials = {
+    firstName: null,
+    lastName: null,
+    email: email,
+    image: null
+  };
   User.findOne({
     where: {
       email: email
@@ -30,19 +36,26 @@ var signin = function signin(email, password, res) {
   }).then(function (user) {
     if (!user) {
       res.status(_httpStatusCodes["default"].BAD_REQUEST).json({
-        message: 'Usuario con este correo no encontrado'
+        code: 404,
+        message: 'User with this email not found'
       });
     } else {
       if (password === user.password) {
-        //   let token = jwt.sign({ user: user }, authConfig.secret, {
+        userEscencials.firstName = user.firstName;
+        userEscencials.lastName = user.lastName;
+        userEscencials.image = user.image; //   let token = jwt.sign({ user: user }, authConfig.secret, {
         //     expiresIn: authConfig.expires
         //   });
+
         res.status(_httpStatusCodes["default"].OK).json({
-          message: 'Autorizado'
+          code: 200,
+          message: 'Authorized',
+          data: userEscencials
         });
       } else {
         res.status(_httpStatusCodes["default"].BAD_REQUEST).json({
-          message: 'Contraseña incorrecta'
+          code: 404,
+          message: 'Incorrect Password'
         });
       }
     }

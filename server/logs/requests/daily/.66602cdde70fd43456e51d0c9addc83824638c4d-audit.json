@@ -14,6 +14,11 @@
             "date": 1622178330267,
             "name": "logs\\requests\\daily\\2021-05-28.log",
             "hash": "b1765e1bcfc4623e90a6d09181eb36cc"
+        },
+        {
+            "date": 1622264408445,
+            "name": "logs\\requests\\daily\\2021-05-29.log",
+            "hash": "8975db13aff0446709f806e60e4f7dd5"
         }
     ]
 }

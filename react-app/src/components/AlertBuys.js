@@ -2,31 +2,19 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { AiFillCloseCircle } from "react-icons/ai";
 
-function Alert() {
-  const message = useSelector((state) => state.products.message);
-  const code = useSelector((state) => state.products.code);
-  const error = useSelector((state) => state.products.error);
-  const loading = useSelector((state) => state.products.loading);
+function AlertBuys() {
+  const message = useSelector((state) => state.buys.message);
+  const code = useSelector((state) => state.buys.code);
+  const error = useSelector((state) => state.buys.error);
+  const loading = useSelector((state) => state.buys.loading);
 
   const [hidden, setHidden] = useState(true);
 
   useEffect(() => {
-    let exceptions = [
-      "Product fetched successfully",
-      "All products fetched successfully",
-    ];
-
+    const exceptions = ["All buys fetched successfully"];
     if (!loading && !exceptions.includes(message) && code !== 0)
       setHidden(false);
   }, [code, loading, message]);
-
-  // useEffect(() => {
-  //   let mounted = true;
-  //   // if (!hidden) setTimeout(() => setHidden(true), 3000);
-  //   return () => {
-  //     mounted = false;
-  //   };
-  // }, [hidden]);
 
   let testCodeSucces = [200, 201, 202].includes(code);
 
@@ -59,4 +47,4 @@ function Alert() {
   );
 }
 
-export default Alert;
+export default AlertBuys;

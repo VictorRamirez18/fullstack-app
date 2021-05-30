@@ -2,6 +2,7 @@ import * as type from "../types";
 
 const initialState = {
   products: [],
+  singleProduct: {},
   loading: false,
   error: null,
   message: null,
@@ -29,7 +30,7 @@ export default function products(state = initialState, action) {
       return {
         ...state,
         loading: false,
-        code: action.products.code,
+        code: action.code,
         error: action.message,
       };
 
@@ -90,12 +91,10 @@ export default function products(state = initialState, action) {
         loading: true,
       };
     case type.DELETE_PRODUCT_SUCCESS:
-      console.log(action);
       const deletedProduct = action.product.data;
       const productsFiltered = state.products.filter(
         (i) => i.id !== deletedProduct.id
       );
-      console.log(productsFiltered);
       return {
         ...state,
         loading: false,
@@ -110,6 +109,33 @@ export default function products(state = initialState, action) {
         loading: false,
         code: action.code,
         error: action.message,
+      };
+
+    //Get single product
+    case type.GET_PRODUCT_REQUESTED:
+      return {
+        ...state,
+        loading: true,
+        error: null,
+        message: null,
+      };
+
+    case type.GET_PRODUCT_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        singleProduct: action.product.data,
+        error: null,
+        message: action.product.message,
+        code: action.product.code,
+      };
+
+    case type.GET_PRODUCT_FAILED:
+      return {
+        ...state,
+        loading: false,
+        error: action.message,
+        code: action.code,
       };
 
     default:

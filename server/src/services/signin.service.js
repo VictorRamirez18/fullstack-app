@@ -6,6 +6,13 @@ const User = require('../models/user')(sequelize, DataTypes);
 // const authConfig = require('../config/auth');
 
 export const signin = (email, password, res) => {
+  const userEscencials = {
+    firstName: null,
+    lastName: null,
+    email: email,
+    image: null
+  };
+
   User.findOne({
     where: {
       email: email
@@ -13,19 +20,25 @@ export const signin = (email, password, res) => {
   })
     .then((user) => {
       if (!user) {
-        res
-          .status(HttpStatus.BAD_REQUEST)
-          .json({ message: 'Usuario con este correo no encontrado' });
+        res.status(HttpStatus.BAD_REQUEST).json({
+          code: 404,
+          message: 'User with this email not found'
+        });
       } else {
         if (password === user.password) {
+          userEscencials.firstName = user.firstName;
+          userEscencials.lastName = user.lastName;
+          userEscencials.image = user.image;
           //   let token = jwt.sign({ user: user }, authConfig.secret, {
           //     expiresIn: authConfig.expires
           //   });
-          res.status(HttpStatus.OK).json({ message: 'Autorizado' });
+          res
+            .status(HttpStatus.OK)
+            .json({ code: 200, message: 'Authorized', data: userEscencials });
         } else {
           res
             .status(HttpStatus.BAD_REQUEST)
-            .json({ message: 'Contraseña incorrecta' });
+            .json({ code: 404, message: 'Incorrect Password' });
         }
       }
     })

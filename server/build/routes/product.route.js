@@ -28,9 +28,9 @@ var router = _express["default"].Router(); //route to get all products
 
 router.get('', productController.getAllProducts); //route to create a new product
 
-router.post('', _product2.newProductValidator, _fake.fakeAuth, productController.newProduct); // //route to get a single product by their product id
-// router.get('/:id', productController.getProduct);
-//route to update a single product by their product id
+router.post('', _product2.newProductValidator, _fake.fakeAuth, productController.newProduct); //route to get a single product by their product id
+
+router.get('/:id', productController.getProduct); //route to update a single product by their product id
 
 router.put('/:id', _product2.newProductValidator, productController.updateProduct); //route to delete a single product by their product id
 

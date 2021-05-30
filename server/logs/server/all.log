@@ -794,3 +794,489 @@ Error: Route.get() requires a callback function but got a [object Undefined]
     at Module.require (internal/modules/cjs/loader.js:952:19)
     at require (internal/modules/cjs/helpers.js:88:18)
     at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\index.js:16:35) {"error":{},"stack":"Error: Route.get() requires a callback function but got a [object Undefined]\n    at Route.<computed> [as get] (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\route.js:202:15)\n    at Function.proto.<computed> [as get] (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\index.js:510:19)\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\buy.route.js:26:8)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n    at Module.load (internal/modules/cjs/loader.js:928:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n    at Module.require (internal/modules/cjs/loader.js:952:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js:16:35)","exception":true,"date":"Fri May 28 2021 18:24:22 GMT-0500 (hora de verano central)","process":{"pid":5700,"uid":null,"gid":null,"cwd":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v14.15.5","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\index.js"],"memoryUsage":{"rss":62324736,"heapTotal":33619968,"heapUsed":20686752,"external":1757765,"arrayBuffers":325093}},"os":{"loadavg":[0,0,0],"uptime":444298},"trace":[{"column":15,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\route.js","function":"Route.<computed> [as get]","line":202,"method":"<computed> [as get]","native":false},{"column":19,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.proto.<computed> [as get]","line":510,"method":"<computed> [as get]","native":false},{"column":8,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\buy.route.js","function":null,"line":26,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1063,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1092,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":928,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":769,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":952,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":35,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js","function":null,"line":16,"method":null,"native":false}],"timestamp":"2021-05-28T23:24:23.121Z"}
+error: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\router\route.js:202:15)
+    at Function.proto.<computed> [as post] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\router\index.js:510:19)
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\buy.route.js:28:8)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\routes\index.js:16:35) {"error":{},"stack":"Error: Route.post() requires a callback function but got a [object Undefined]\n    at Route.<computed> [as post] (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\route.js:202:15)\n    at Function.proto.<computed> [as post] (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\index.js:510:19)\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\buy.route.js:28:8)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n    at Module.load (internal/modules/cjs/loader.js:928:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n    at Module.require (internal/modules/cjs/loader.js:952:19)\n    at require (internal/modules/cjs/helpers.js:88:18)\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js:16:35)","exception":true,"date":"Fri May 28 2021 18:26:23 GMT-0500 (hora de verano central)","process":{"pid":12976,"uid":null,"gid":null,"cwd":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v14.15.5","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\index.js"],"memoryUsage":{"rss":61878272,"heapTotal":33619968,"heapUsed":20595264,"external":1742627,"arrayBuffers":309955}},"os":{"loadavg":[0,0,0],"uptime":444419},"trace":[{"column":15,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\route.js","function":"Route.<computed> [as post]","line":202,"method":"<computed> [as post]","native":false},{"column":19,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.proto.<computed> [as post]","line":510,"method":"<computed> [as post]","native":false},{"column":8,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\buy.route.js","function":null,"line":28,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1063,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1092,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":928,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":769,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":952,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false},{"column":35,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\routes\\index.js","function":null,"line":16,"method":null,"native":false}],"timestamp":"2021-05-28T23:26:23.651Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T23:27:21.238Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T23:27:21.311Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T23:34:06.932Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T23:34:06.987Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T23:39:26.099Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T23:39:26.150Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T23:42:05.716Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T23:42:05.772Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T23:44:31.109Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T23:44:31.160Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T23:51:20.167Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T23:51:20.223Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T23:55:37.525Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T23:55:37.587Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-28T23:58:01.220Z"}
+info: Connected to the database. {"timestamp":"2021-05-28T23:58:01.279Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T00:02:50.677Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T00:02:50.740Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T00:03:44.857Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T00:03:44.923Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T00:07:46.775Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T00:07:46.834Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T00:11:48.820Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T00:11:48.899Z"}
+error: 
+    status - 500 
+    message - TypeError: BuyService.newBuy is not a function
+    at _callee2$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\controllers\buy.controller.js:74:31)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12
+    at newBuy (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\controllers\buy.controller.js:100:18) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T00:17:12.633Z"}
+error: uncaughtException: A column called 'id' was added to the attributes of 'buys' but not marked with 'primaryKey: true'
+Error: A column called 'id' was added to the attributes of 'buys' but not marked with 'primaryKey: true'
+    at Function._addDefaultAttributes (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:228:15)
+    at Function.init (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:1060:10)
+    at module.exports (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\models\buy.js:40:7)
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\services\buy.service.js:22:35)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18) {"error":{},"stack":"Error: A column called 'id' was added to the attributes of 'buys' but not marked with 'primaryKey: true'\n    at Function._addDefaultAttributes (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\sequelize\\lib\\model.js:228:15)\n    at Function.init (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\sequelize\\lib\\model.js:1060:10)\n    at module.exports (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\models\\buy.js:40:7)\n    at Object.<anonymous> (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\services\\buy.service.js:22:35)\n    at Module._compile (internal/modules/cjs/loader.js:1063:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)\n    at Module.load (internal/modules/cjs/loader.js:928:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:769:14)\n    at Module.require (internal/modules/cjs/loader.js:952:19)\n    at require (internal/modules/cjs/helpers.js:88:18)","exception":true,"date":"Fri May 28 2021 19:18:20 GMT-0500 (hora de verano central)","process":{"pid":13276,"uid":null,"gid":null,"cwd":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v14.15.5","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\index.js"],"memoryUsage":{"rss":61652992,"heapTotal":33619968,"heapUsed":20693856,"external":1729278,"arrayBuffers":296606}},"os":{"loadavg":[0,0,0],"uptime":447535},"trace":[{"column":15,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\sequelize\\lib\\model.js","function":"Function._addDefaultAttributes","line":228,"method":"_addDefaultAttributes","native":false},{"column":10,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\sequelize\\lib\\model.js","function":"Function.init","line":1060,"method":"init","native":false},{"column":7,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\models\\buy.js","function":"module.exports","line":40,"method":"exports","native":false},{"column":35,"file":"C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\build\\services\\buy.service.js","function":null,"line":22,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":1063,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":1092,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":928,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":769,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":952,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":88,"method":null,"native":false}],"timestamp":"2021-05-29T00:18:20.407Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T00:19:13.020Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T00:19:13.079Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T00:20:26.887Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T00:20:26.978Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T00:21:02.244Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T00:21:02.299Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T00:24:18.902Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T00:24:18.973Z"}
+error: 
+    status - 500 
+    message - ValidationError: "amount" is not allowed 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T00:43:15.051Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T00:49:22.310Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T00:49:22.587Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T01:09:29.814Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T01:09:29.868Z"}
+error: 
+    status - 500 
+    message - ReferenceError: Employee is not defined
+    at _callee6$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\services\product.service.js:186:13)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12)
+    at Object.updateAmountProduct (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\services\product.service.js:207:18) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T01:09:44.843Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T01:10:26.818Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T01:10:26.878Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T03:18:23.124Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T03:18:23.617Z"}
+error: 
+    status - 500 
+    message - ValidationError: "firstName" is required 
+    url - /api/v1/users/signin 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T03:50:36.344Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T03:54:54.911Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T03:54:55.246Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T03:58:30.669Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T03:58:30.725Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T04:07:42.155Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T04:07:42.448Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T04:15:15.486Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T04:15:15.820Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T04:21:34.433Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T04:21:34.516Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T18:26:01.111Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T18:26:01.664Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T19:16:58.559Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T19:16:58.617Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T19:48:35.067Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T19:48:35.120Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T19:57:43.910Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T19:57:43.962Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T20:01:22.659Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T20:01:22.730Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-29T20:07:06.671Z"}
+error: 
+    status - 500 
+    message - ValidationError: "image" is required 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-29T20:07:23.359Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-29T20:08:05.939Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T20:28:19.027Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T20:28:19.081Z"}
+error: 
+    status - 500 
+    message - Error: WHERE parameter "id" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2269:13)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2392:30
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereGroupBind (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2391:21)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2327:19)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T20:39:43.445Z"}
+error: 
+    status - 500 
+    message - SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:242:16)
+    at Query.run (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async buy.save (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:2207:12) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T20:42:32.129Z"}
+error: 
+    status - 500 
+    message - SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:242:16)
+    at Query.run (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async buy.save (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:2207:12) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T20:42:32.138Z"}
+error: 
+    status - 500 
+    message - Error: WHERE parameter "id" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2269:13)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2392:30
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereGroupBind (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2391:21)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2327:19)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T20:43:31.488Z"}
+error: 
+    status - 500 
+    message - Error: WHERE parameter "id" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2269:13)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2392:30
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereGroupBind (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2391:21)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2327:19)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T20:46:00.732Z"}
+error: 
+    status - 500 
+    message - SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:242:16)
+    at Query.run (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async buy.save (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:2207:12) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T20:46:19.756Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T20:48:26.537Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T20:48:26.598Z"}
+error: 
+    status - 500 
+    message - SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:242:16)
+    at Query.run (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async buy.save (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:2207:12) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T20:48:45.371Z"}
+error: 
+    status - 500 
+    message - SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:242:16)
+    at Query.run (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async buy.save (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:2207:12) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T20:50:39.044Z"}
+error: 
+    status - 500 
+    message - SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:242:16)
+    at Query.run (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async buy.save (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:2207:12) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T20:52:43.831Z"}
+error: 
+    status - 500 
+    message - SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:242:16)
+    at Query.run (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async buy.save (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:2207:12) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T20:54:20.248Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T20:55:33.190Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T20:55:33.248Z"}
+error: 
+    status - 500 
+    message - SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:242:16)
+    at Query.run (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async buy.save (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:2207:12) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T20:55:38.988Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T20:58:11.637Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T20:58:11.761Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T20:59:27.840Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T20:59:27.907Z"}
+error: 
+    status - 500 
+    message - ReferenceError: data is not defined
+    at _callee2$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\services\buy.service.js:78:47)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.throw (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _throw (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:29:9)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T20:59:46.214Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T21:00:30.142Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T21:00:30.202Z"}
+error: 
+    status - 500 
+    message - Error: WHERE parameter "id" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2269:13)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2256:35)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2392:30
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereGroupBind (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2391:21)
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2327:19)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2258:25
+    at Array.forEach (<anonymous>) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T21:00:35.602Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T21:01:26.682Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T21:01:26.738Z"}
+error: 
+    status - 500 
+    message - SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:242:16)
+    at Query.run (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\mysql\query.js:77:18)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\sequelize.js:619:16
+    at async MySQLQueryInterface.insert (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\dialects\abstract\query-interface.js:749:21)
+    at async buy.save (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:3954:35)
+    at async Function.create (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\sequelize\lib\model.js:2207:12) 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T21:01:31.665Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T21:24:25.641Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T21:24:25.716Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/3 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-29T22:28:39.812Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T22:31:19.542Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-29T22:31:54.499Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/4 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-29T22:32:12.107Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-29T22:39:38.978Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/1 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-29T22:40:10.629Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/4 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-29T22:43:00.885Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/4 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-29T22:44:05.965Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-29T22:51:23.994Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/4 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-29T22:52:00.610Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/4 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-29T22:55:05.062Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/4 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-29T22:57:10.193Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/4 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-29T22:58:14.905Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T23:04:44.975Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T23:04:45.268Z"}
+error: 
+      status - 400
+      message - Name isn´t equals to Laptop 
+      url - /api/v1/products 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2021-05-29T23:22:20.305Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" length must be at least 3 characters long 
+    url - /api/v1/products/6 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-29T23:22:32.095Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-29T23:30:23.365Z"}
+info: Connected to the database. {"timestamp":"2021-05-29T23:30:23.608Z"}

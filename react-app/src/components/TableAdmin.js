@@ -1,13 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MdModeEdit } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 import { putFormAdminState } from "../redux/actions/formAdminState.action";
-import { deleteProduct } from "../redux/actions/products.action";
+import { deleteProduct, getProducts } from "../redux/actions/products.action";
+import {
+  productModalDelete,
+  toogleModal,
+} from "../redux/actions/modals.action";
 
 function TableAdmin() {
+  const dispatch = useDispatch();
   const products = useSelector((state) => state.products.products);
   const loading = useSelector((state) => state.products.loading);
+
+  useEffect(() => {
+    if (products.length === 0) dispatch(getProducts());
+  }, [dispatch]);
 
   return (
     <table className="table-auto w-full border-collapse text-center">
@@ -18,6 +27,7 @@ function TableAdmin() {
           <th className="border border-black">Brand</th>
           <th className="border border-black">Price</th>
           <th className="border border-black">Stock</th>
+          <th className="border border-black">Url Image</th>
           <th className="border border-black">Actions</th>
         </tr>
       </thead>
@@ -33,7 +43,14 @@ function TableAdmin() {
 }
 
 const RowProduct = ({ product }) => {
-  const [editing, setEditing] = useState(false);
+  const formAdminState = useSelector((state) => state.formAdminState.product);
+  const editingRedux = useSelector((state) => state.formAdminState.editing);
+
+  const testId = () => {
+    if (product.id === formAdminState.id) return editingRedux;
+  };
+
+  const [editing, setEditing] = useState(editingRedux ? testId() : false);
 
   const dispatch = useDispatch();
 
@@ -43,7 +60,8 @@ const RowProduct = ({ product }) => {
   };
 
   const deletedProduct = () => {
-    dispatch(deleteProduct(product));
+    dispatch(productModalDelete(product));
+    dispatch(toogleModal(true));
   };
   return (
     <tr>
@@ -52,6 +70,7 @@ const RowProduct = ({ product }) => {
       <td className="border border-black">{product.brand}</td>
       <td className="border border-black">{product.price}</td>
       <td className="border border-black">{product.stock}</td>
+      <td className="border border-black">{product.image}</td>
       <td className="border border-black">
         <div className="flex justify-around">
           <button

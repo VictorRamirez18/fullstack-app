@@ -6,12 +6,11 @@ import Admin from "./pages/Admin";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
-  const routeBuyProduct = "/BuyProduct/:id?/:name?/:brand?/:price?/:stock?";
   return (
     <Router>
       <Switch>
         <Route path="/" component={Home} exact />
-        <Route path={routeBuyProduct} component={BuyProduct} exact />
+        <Route path="/BuyProduct/:id?" component={BuyProduct} exact />
         <Route path="/Buys" component={Buys} exact />
         <Route path="/Admin" component={Admin} exact />
         <Route path="*" component={Home} exact />

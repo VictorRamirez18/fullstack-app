@@ -17,11 +17,6 @@ var _buy = _interopRequireDefault(require("./buy.route"));
 
 var router = _express["default"].Router();
 
-/**
- * Function contains Application routes
- *
- * @returns router
- */
 var routes = function routes() {
   router.get('/', function (req, res) {
     res.json('Welcome');

@@ -1,6 +1,6 @@
 import { call, put, takeEvery } from "redux-saga/effects";
 
-const apiUrl = "http://localhost:3001/api/v1/products";
+let apiUrl = "";
 
 function getApi() {
   return fetch(apiUrl, {
@@ -15,21 +15,24 @@ function getApi() {
     });
 }
 
-function* fetchProducts() {
+function* fetchProduct(action) {
+  const id = action.payload;
+  apiUrl = `http://localhost:3001/api/v1/products/${id}`;
+
   try {
-    const products = yield call(getApi);
-    yield put({ type: "GET_PRODUCTS_SUCCESS", products: products });
+    const product = yield call(getApi);
+    yield put({ type: "GET_PRODUCT_SUCCESS", product: product });
   } catch (e) {
     yield put({
-      type: "GET_PRODUCTS_FAILED",
+      type: "GET_PRODUCT_FAILED",
       message: e.message,
       code: 404,
     });
   }
 }
 
-function* getProducts() {
-  yield takeEvery("GET_PRODUCTS_REQUESTED", fetchProducts);
+function* getProduct() {
+  yield takeEvery("GET_PRODUCT_REQUESTED", fetchProduct);
 }
 
-export default getProducts;
+export default getProduct;

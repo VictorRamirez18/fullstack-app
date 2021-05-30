@@ -23,8 +23,8 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 var router = _express["default"].Router(); //route to get all buys
 
 
-router.get('', buyController.getAllProducts); //route to create a new buy
+router.get('', buyController.getAllBuys); //route to create a new buy
 
-router.post('', buyController.newProduct);
+router.post('', buyController.newBuy);
 var _default = router;
 exports["default"] = _default;

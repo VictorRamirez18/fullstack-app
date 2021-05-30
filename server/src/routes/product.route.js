@@ -12,8 +12,8 @@ router.get('', productController.getAllProducts);
 //route to create a new product
 router.post('', newProductValidator, fakeAuth, productController.newProduct);
 
-// //route to get a single product by their product id
-// router.get('/:id', productController.getProduct);
+//route to get a single product by their product id
+router.get('/:id', productController.getProduct);
 
 //route to update a single product by their product id
 router.put('/:id', newProductValidator, productController.updateProduct);

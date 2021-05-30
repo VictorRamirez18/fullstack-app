@@ -7,7 +7,7 @@ var _typeof = require("@babel/runtime/helpers/typeof");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getProduct = exports.deleteProduct = exports.updateProduct = exports.newProduct = exports.getAllProducts = void 0;
+exports.updateAmountProduct = exports.getProduct = exports.deleteProduct = exports.updateProduct = exports.newProduct = exports.getAllProducts = void 0;
 
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 
@@ -171,6 +171,41 @@ var getProduct = /*#__PURE__*/function () {
   return function getProduct(_x5) {
     return _ref5.apply(this, arguments);
   };
-}();
+}(); //update amount Product
+
 
 exports.getProduct = getProduct;
+
+var updateAmountProduct = /*#__PURE__*/function () {
+  var _ref6 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee6(body) {
+    return _regenerator["default"].wrap(function _callee6$(_context6) {
+      while (1) {
+        switch (_context6.prev = _context6.next) {
+          case 0:
+            _context6.next = 2;
+            return Product.update({
+              stock: body.stock - body.amount
+            }, {
+              where: {
+                id: body.idProduct
+              }
+            });
+
+          case 2:
+            body.stock -= body.amount;
+            return _context6.abrupt("return", body);
+
+          case 4:
+          case "end":
+            return _context6.stop();
+        }
+      }
+    }, _callee6);
+  }));
+
+  return function updateAmountProduct(_x6) {
+    return _ref6.apply(this, arguments);
+  };
+}();
+
+exports.updateAmountProduct = updateAmountProduct;

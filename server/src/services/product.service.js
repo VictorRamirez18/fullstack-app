@@ -32,3 +32,15 @@ export const getProduct = async (id) => {
   const data = await Product.findByPk(id);
   return data;
 };
+
+//update amount Product
+export const updateAmountProduct = async (body) => {
+  await Product.update(
+    { stock: body.stock - body.amount },
+    {
+      where: { id: body.idProduct }
+    }
+  );
+  body.stock -= body.amount;
+  return body;
+};

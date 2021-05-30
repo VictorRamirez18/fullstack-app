@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import Login from "./Login";
+// import AlertLogin from "./AlertLogin";
+import Modal from "./Modal";
 
 function Navbar() {
   return (
-    <div className="bg-gray-500 flex-wrap py-2 px-0 flex justify-around">
+    <div className="bg-gray-500 flex-wrap items-center py-2 px-0 flex justify-around h-16">
       <Link to="/" className="w-3/12  flex justify-start">
         <img src="#" alt="logo" />
       </Link>
       <Menu />
       <Login />
+      <Modal />
+      {/* <AlertLogin /> */}
     </div>
   );
 }
@@ -22,52 +27,6 @@ const Menu = () => {
       <Link to="/Buys">
         <p className="bg-blue-200 p-1">Buys</p>
       </Link>
-    </div>
-  );
-};
-
-const Login = () => {
-  const [hidden, setHidden] = useState(true);
-  const flagLogin = false;
-
-  const handleSignIn = () => {
-    setHidden(true);
-  };
-
-  return (
-    <div
-      className="w-3/12 flex flex-col flex-wrap items-center gap-2 relative "
-      onClick={() => (hidden ? setHidden(false) : null)}
-      id="loginContainer"
-    >
-      <img src="#" alt="avatarUser" id="avatarUser" />
-      {!flagLogin && (
-        <div
-          className={`bg-gray-700 text-white flex flex-col gap-2 items-center p-2 w-full absolute ${
-            hidden ? "hidden" : ""
-          }`}
-        >
-          <img src="#" alt="avatarUser" />
-          <label htmlFor="nameUser">Name</label>
-          <input type="text" id="nameUser" />
-          <label htmlFor="passwordUser">Password</label>
-          <input type="password" id="passwordUser" />
-          <button className="bg-blue-200 p-1 text-black" onClick={handleSignIn}>
-            Signin
-          </button>
-        </div>
-      )}
-      {flagLogin && (
-        <div
-          className={`bg-gray-400 flex flex-col gap-2 items-center p-2  w-full absolute ${
-            hidden ? "hidden" : ""
-          }`}
-        >
-          <img src="#" alt="avatarUser" />
-          <p>Username</p>
-          <button className="bg-blue-200 p-1">Close Session</button>
-        </div>
-      )}
     </div>
   );
 };

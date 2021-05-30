@@ -15,7 +15,8 @@ var newProductValidator = function newProductValidator(req, res, next) {
     name: _joi["default"].string().min(3).required(),
     brand: _joi["default"].string().min(2).required(),
     price: _joi["default"].number().min(0).required(),
-    stock: _joi["default"].number().integer().min(1).required()
+    stock: _joi["default"].number().integer().min(1).required(),
+    image: _joi["default"].string().required()
   });
 
   var _schema$validate = schema.validate(req.body),

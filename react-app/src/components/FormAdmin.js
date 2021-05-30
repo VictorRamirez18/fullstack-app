@@ -9,6 +9,7 @@ const initialState = {
   brand: "Lorem",
   price: 12,
   stock: 12,
+  image: "https://revistaitnow.com/wp-content/uploads/2020/12/1.jpeg",
 };
 
 function FormularioAdmin() {
@@ -89,6 +90,15 @@ function FormularioAdmin() {
         className="w-10/12 p-1"
         name="stock"
         id="stockProduct"
+      />
+
+      <label htmlFor="imageProduct">Url Image</label>
+      <input
+        type="text"
+        value={formState.image}
+        onChange={handleChange}
+        className="w-10/12 p-1"
+        id="imageProduct"
       />
 
       <button

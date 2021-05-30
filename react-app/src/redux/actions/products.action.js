@@ -29,9 +29,15 @@ export function putProduct(product) {
 }
 
 export function deleteProduct(product) {
-  console.log(product);
   return {
     type: type.DELETE_PRODUCT_REQUESTED,
     payload: product,
+  };
+}
+
+export function getProduct(id) {
+  return {
+    type: type.GET_PRODUCT_REQUESTED,
+    payload: id,
   };
 }
