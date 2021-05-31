@@ -33,7 +33,7 @@ export default function formAdminState(state = initialState, action) {
         message: action.user.message,
         // token: action.user.token,
         token:
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJmaXJzdE5hbWUiOiJzdGV2ZSIsImxhc3ROYW1lIjoicm9nZXJzIiwiZW1haWwiOiJzdGV2ZUBnbWFpbC5jb20iLCJpbWFnZSI6Imh0dHBzOi8vczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vd3AtbXByby1ibG9nL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE2LzAzLzE0MTMzOTU5L3MzLWJsb2ctdGVjbm9sb2dpYS1jb21vLXByaW9yaWRhZC1taW4ucG5nIiwicGFzc3dvcmQiOiJja3oiLCJjcmVhdGVkQXQiOiIyMDIxLTA1LTI5VDE4OjI2OjE1LjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIxLTA1LTI5VDE4OjI2OjE1LjAwMFoifSwiaWF0IjoxNjIyNDA4NDA0LCJleHAiOjE2MjI0OTQ4MDR9.xf_rmLJYx9z9zEvd9Cv3_ucrMMg--ok_MwM_S_A7qEg",
+          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJmaXJzdE5hbWUiOiJKb2huIiwibGFzdE5hbWUiOiJEb2UiLCJlbWFpbCI6IkpvaG5Eb2VAZ21haWwuY29tIiwiaW1hZ2UiOiJodHRwczovL2VuY3J5cHRlZC10Ym4wLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NUUHlHTnIycUw2M1NmdWdrMloxLUtCRXdNR09meWNCcmliZXcmdXNxcD1DQVUiLCJwYXNzd29yZCI6ImNreiIsImNyZWF0ZWRBdCI6IjIwMjEtMDUtMzBUMjI6MjI6MjAuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjEtMDUtMzBUMjI6MjI6MjAuMDAwWiJ9LCJpYXQiOjE2MjI0Mzc5MzcsImV4cCI6MTYyMjUyNDMzN30.oPaSdEr-dmFMZxKyC_ts-ciL5pPQV27K2cGGLnp4Cow",
       };
     case type.SIGNIN_FAILED:
       return {

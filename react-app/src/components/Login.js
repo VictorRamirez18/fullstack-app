@@ -11,7 +11,6 @@ function Login({ hiddenOptions }) {
 
   const [hidden, setHidden] = useState(true);
   const [empty, setEmpty] = useState(false);
-  // const hidden = useSelector((state) => state.signin.hiddenLogin);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -26,7 +25,6 @@ function Login({ hiddenOptions }) {
     setEmpty(false);
     dispatch(signIn(email, password));
     dispatch(clearMessagesBuys());
-    // setHidden(true);
   };
 
   const handleChange = (event) => {
@@ -132,7 +130,7 @@ function Login({ hiddenOptions }) {
             className="h-24"
             onClick={() => setHidden(true)}
           />
-          <p className="capitalize text-white">{`${user.firstName} ${user.lastName}`}</p>
+          <p className="capitalize text-xl text-white">{`${user.firstName} ${user.lastName}`}</p>
           <p className="text-white text-xl">{`${user.email}`}</p>
           <button
             className="bg-red-200 rounded-md p-1 font-medium"

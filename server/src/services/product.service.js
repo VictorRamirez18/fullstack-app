@@ -1,4 +1,6 @@
+import HttpStatus from 'http-status-codes';
 import sequelize, { DataTypes } from '../config/database';
+import product from '../models/product';
 const Product = require('../models/product')(sequelize, DataTypes);
 
 //get all products
@@ -8,8 +10,26 @@ export const getAllProducts = async () => {
 };
 
 //create new product
-export const newProduct = async (body) => {
-  const data = await Product.create(body);
+export const newProduct = async (body, res) => {
+  let data;
+  await Product.findAll({ where: { name: body.name } }).then((products) => {
+    let arrayProductsSameName = products.filter(
+      (product) => product.brand === body.brand
+    );
+    if (!arrayProductsSameName.length) {
+      const dataFunction = async () => {
+        let productCreated = await Product.create(body);
+        data = productCreated.dataValues;
+        return false;
+      };
+      return dataFunction();
+    }
+    res.status(HttpStatus.BAD_REQUEST).json({
+      code: 404,
+      message: 'Cannot Duplicate products'
+    });
+  });
+  console.log(data);
   return data;
 };
 

@@ -4953,3 +4953,254 @@ error:
     method - PUT 
     IP - ::1
    {"timestamp":"2021-05-30T22:27:01.709Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T02:08:14.346Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T02:08:14.631Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T02:52:55.276Z"}
+error: Could not connect to the database. Access denied for user 'jairr'@'localhost' (using password: NO) {"name":"SequelizeAccessDeniedError","parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'jairr'@'localhost' (using password: NO)"},"original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'jairr'@'localhost' (using password: NO)"},"stack":"SequelizeAccessDeniedError: Access denied for user 'jairr'@'localhost' (using password: NO)\n    at ConnectionManager.connect (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\sequelize\\lib\\dialects\\mysql\\connection-manager.js:118:17)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async ConnectionManager._connect (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\sequelize\\lib\\dialects\\abstract\\connection-manager.js:318:24)\n    at async C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\sequelize\\lib\\dialects\\abstract\\connection-manager.js:250:32","timestamp":"2021-05-31T02:52:55.313Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T02:53:20.889Z"}
+error: Could not connect to the database. Access denied for user 'jairr'@'localhost' (using password: NO) {"name":"SequelizeAccessDeniedError","parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'jairr'@'localhost' (using password: NO)"},"original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'jairr'@'localhost' (using password: NO)"},"stack":"SequelizeAccessDeniedError: Access denied for user 'jairr'@'localhost' (using password: NO)\n    at ConnectionManager.connect (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\sequelize\\lib\\dialects\\mysql\\connection-manager.js:118:17)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async ConnectionManager._connect (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\sequelize\\lib\\dialects\\abstract\\connection-manager.js:318:24)\n    at async C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\sequelize\\lib\\dialects\\abstract\\connection-manager.js:250:32","timestamp":"2021-05-31T02:53:20.928Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T02:53:58.376Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T02:53:58.441Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T03:32:11.859Z"}
+error: Could not connect to the database. Access denied for user 'jairr'@'localhost' (using password: YES) {"name":"SequelizeAccessDeniedError","parent":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'jairr'@'localhost' (using password: YES)"},"original":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'jairr'@'localhost' (using password: YES)"},"stack":"SequelizeAccessDeniedError: Access denied for user 'jairr'@'localhost' (using password: YES)\n    at ConnectionManager.connect (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\sequelize\\lib\\dialects\\mysql\\connection-manager.js:118:17)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async ConnectionManager._connect (C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\sequelize\\lib\\dialects\\abstract\\connection-manager.js:318:24)\n    at async C:\\Users\\jairr\\Documents\\CS21\\fullstack-app\\server\\node_modules\\sequelize\\lib\\dialects\\abstract\\connection-manager.js:250:32","timestamp":"2021-05-31T03:32:11.904Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T03:32:40.836Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T03:32:40.892Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T03:33:01.159Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T03:33:01.214Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T04:25:17.375Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T04:25:17.506Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\jsonwebtoken\verify.js:63:17)
+    at _callee$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\middlewares\auth.middleware.js:43:45)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T04:43:41.398Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T04:50:38.778Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T04:50:39.137Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\jsonwebtoken\verify.js:63:17)
+    at _callee$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\middlewares\auth.middleware.js:43:45)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T04:51:40.826Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\jsonwebtoken\verify.js:63:17)
+    at _callee$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\middlewares\auth.middleware.js:43:45)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T04:53:00.095Z"}
+error: 
+    status - 500 
+    message - ValidationError: "stock" must be larger than or equal to 1 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T05:08:34.489Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\jsonwebtoken\verify.js:63:17)
+    at _callee$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\middlewares\auth.middleware.js:43:45)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T05:08:52.045Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: invalid signature
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\jsonwebtoken\verify.js:94:10)
+    at _callee$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\middlewares\auth.middleware.js:43:45)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T05:11:19.054Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T05:12:09.521Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T05:12:09.601Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T05:13:05.703Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T05:13:05.763Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\jsonwebtoken\verify.js:63:17)
+    at _callee$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\middlewares\auth.middleware.js:43:45)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T05:13:35.038Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T05:15:20.307Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T05:15:20.368Z"}
+error: 
+    status - 500 
+    message - ValidationError: "brand" length must be at least 2 characters long 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T05:16:17.056Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T05:25:20.452Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T05:25:20.511Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T05:26:51.500Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T05:26:51.563Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T05:31:38.088Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T05:31:38.159Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T05:33:07.598Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T05:33:07.666Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T05:35:28.002Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T05:35:28.086Z"}
+error: 
+    status - 500 
+    message - ReferenceError: res is not defined
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\build\services\product.service.js:106:15
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T05:35:52.949Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T05:37:34.768Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T05:37:34.834Z"}
+error: 
+    status - 500 
+    message - ReferenceError: HttpStatus is not defined
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\build\services\product.service.js:106:26
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T05:38:24.611Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T05:39:03.197Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T05:39:03.301Z"}
+error: 
+    status - 500 
+    message - Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:558:11)
+    at ServerResponse.header (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\response.js:267:15)
+    at _callee3$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\controllers\product.controller.js:119:61)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T05:39:24.459Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T05:40:37.642Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T05:40:37.714Z"}
+error: 
+    status - 500 
+    message - ValidationError: "stock" must be larger than or equal to 1 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T05:48:39.010Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T05:52:06.609Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T05:52:06.708Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\jsonwebtoken\verify.js:63:17)
+    at _callee$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\middlewares\auth.middleware.js:43:45)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T05:53:21.904Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\jsonwebtoken\verify.js:63:17)
+    at _callee$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\middlewares\auth.middleware.js:43:45)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T05:54:39.716Z"}
+error: 
+    status - 500 
+    message - Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:558:11)
+    at ServerResponse.header (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\response.js:267:15)
+    at _callee3$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\controllers\product.controller.js:119:61)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T05:56:19.504Z"}

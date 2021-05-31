@@ -29,7 +29,7 @@ export const getProduct = async (req, res, next) => {
 
 export const newProduct = async (req, res, next) => {
   try {
-    const data = await ProductService.newProduct(req.body);
+    const data = await ProductService.newProduct(req.body, res);
     res.status(HttpStatus.CREATED).json({
       code: HttpStatus.CREATED,
       data: data,

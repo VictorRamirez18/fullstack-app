@@ -15,8 +15,8 @@ function TableAdmin() {
   const loading = useSelector((state) => state.products.loading);
 
   useEffect(() => {
-    if (products.length === 0) dispatch(getProducts());
-  }, [dispatch, products]);
+    dispatch(getProducts());
+  }, [dispatch]);
 
   return (
     <table className="table-auto w-full border-collapse text-center">

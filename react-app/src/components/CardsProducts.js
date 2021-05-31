@@ -42,7 +42,7 @@ function CardsProducts() {
 const CardProduct = ({ product }) => {
   return (
     <div className="flex flex-col bg-blue-300 shadow-lg h-96 sm:h-80 w-full p-2">
-      <div className="w-full h-3/5">
+      <div className="w-full h-3/5 border border-black">
         <img
           src={product.image}
           alt="imageProduct"

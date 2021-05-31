@@ -112,7 +112,7 @@ var newProduct = /*#__PURE__*/function () {
           case 0:
             _context3.prev = 0;
             _context3.next = 3;
-            return ProductService.newProduct(req.body);
+            return ProductService.newProduct(req.body, res);
 
           case 3:
             data = _context3.sent;
