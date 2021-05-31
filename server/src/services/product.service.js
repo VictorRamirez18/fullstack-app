@@ -1,6 +1,5 @@
 import HttpStatus from 'http-status-codes';
 import sequelize, { DataTypes } from '../config/database';
-import product from '../models/product';
 const Product = require('../models/product')(sequelize, DataTypes);
 
 //get all products

@@ -2,6 +2,7 @@ import express from 'express';
 import * as productController from '../controllers/product.controller';
 import { newProductValidator } from '../validators/product.validator';
 import { userAuth } from '../middlewares/auth.middleware';
+import { validatorDuplicateProduct } from '../validators/validationDuplicateProducts';
 
 const router = express.Router();
 
@@ -18,6 +19,7 @@ router.get('/:id', productController.getProduct);
 router.put(
   '/:id',
   newProductValidator,
+  validatorDuplicateProduct,
   userAuth,
   productController.updateProduct
 );

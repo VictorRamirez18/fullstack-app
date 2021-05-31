@@ -180,3 +180,262 @@ error:
     method - POST 
     IP - ::1
    {"timestamp":"2021-05-31T05:56:19.504Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T06:29:01.096Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T06:29:01.159Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T06:58:59.348Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T06:58:59.446Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T07:00:38.573Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T07:01:08.725Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T07:01:08.809Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T07:01:26.844Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T07:01:26.911Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T07:03:53.935Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T07:03:54.024Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T07:04:59.545Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T07:04:59.621Z"}
+error: 
+    status - 500 
+    message - Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:558:11)
+    at ServerResponse.header (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\response.js:267:15)
+    at _callee4$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\controllers\product.controller.js:160:62)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/products/2 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T07:05:18.451Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T07:08:04.259Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T07:08:04.334Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/products/2 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T07:08:20.815Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/products/2 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T07:08:29.111Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T07:12:43.693Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T07:12:43.766Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/products/2 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T07:12:50.576Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T07:13:32.077Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T07:13:32.137Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/products/2 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T07:13:38.627Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T14:58:12.357Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T14:58:13.138Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/products/2 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:00:02.702Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T15:02:43.462Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T15:02:43.526Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/products/2 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:02:51.043Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T15:04:19.785Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T15:04:19.849Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/products/2 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:04:28.069Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T15:06:14.886Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T15:06:14.947Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/products/2 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:06:22.227Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T15:09:28.908Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T15:09:28.966Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read property 'dataValues' of undefined
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\build\validators\validationDuplicateProducts.js:43:53
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+    url - /api/v1/products/2 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:09:35.897Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T15:10:16.474Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T15:10:16.532Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read property 'dataValues' of undefined
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\build\validators\validationDuplicateProducts.js:44:52
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+    url - /api/v1/products/2 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:10:27.104Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T15:11:09.034Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T15:11:09.114Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/products/2 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:11:17.551Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T15:12:24.763Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T15:12:24.819Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/products/2 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:12:49.003Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/products/7 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:13:31.238Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T15:16:03.788Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T15:16:03.845Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" is not allowed to be empty 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:16:28.354Z"}
+error: 
+    status - 500 
+    message - Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:558:11)
+    at ServerResponse.header (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\response.js:267:15)
+    at _callee3$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\controllers\product.controller.js:119:61)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:17:15.525Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/products/12 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:17:37.524Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read property 'dataValues' of undefined
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\build\validators\validationDuplicateProducts.js:41:44
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+    url - /api/v1/products/12 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:17:45.260Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T15:19:12.825Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T15:19:12.881Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read property 'dataValues' of undefined
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\build\validators\validationDuplicateProducts.js:40:49
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+    url - /api/v1/products/12 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:19:22.374Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T15:22:06.165Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T15:22:06.221Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/products/12 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:22:34.718Z"}
+info: Server started at http://localhost:3001/api/v1/ {"timestamp":"2021-05-31T15:25:58.306Z"}
+info: Connected to the database. {"timestamp":"2021-05-31T15:25:58.362Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\jsonwebtoken\verify.js:63:17)
+    at _callee$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\middlewares\auth.middleware.js:43:45)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:32:7
+    at new Promise (<anonymous>)
+    at C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:21:12 
+    url - /api/v1/buys 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:26:04.124Z"}
+error: 
+    status - 500 
+    message - ValidationError: "name" is not allowed to be empty 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:27:02.400Z"}
+error: 
+    status - 500 
+    message - Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:558:11)
+    at ServerResponse.header (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\express\lib\response.js:267:15)
+    at _callee3$ (C:\Users\jairr\Documents\CS21\fullstack-app\server\build\controllers\product.controller.js:119:61)
+    at tryCatch (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+    at _next (C:\Users\jairr\Documents\CS21\fullstack-app\server\node_modules\@babel\runtime\helpers\asyncToGenerator.js:25:9) 
+    url - /api/v1/products 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:27:20.698Z"}
+error: 
+    status - 500 
+    message - undefined 
+    url - /api/v1/products/15 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2021-05-31T15:27:48.803Z"}

@@ -29,13 +29,13 @@ export const signin = (email, password, res) => {
           userEscencials.firstName = user.firstName;
           userEscencials.lastName = user.lastName;
           userEscencials.image = user.image;
-          // let token = jwt.sign({ user: user }, authConfig.secret, {
-          //   expiresIn: authConfig.expires
-          // });
+          let token = jwt.sign({ user: user }, authConfig.secret, {
+            expiresIn: authConfig.expires
+          });
           res.status(HttpStatus.OK).json({
             code: 200,
             message: 'Authorized',
-            // token: token,
+            token: token,
             data: userEscencials
           });
         } else {

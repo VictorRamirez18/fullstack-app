@@ -45,14 +45,16 @@ var signin = function signin(email, password, res) {
       if (password === user.password) {
         userEscencials.firstName = user.firstName;
         userEscencials.lastName = user.lastName;
-        userEscencials.image = user.image; // let token = jwt.sign({ user: user }, authConfig.secret, {
-        //   expiresIn: authConfig.expires
-        // });
-
+        userEscencials.image = user.image;
+        var token = jwt.sign({
+          user: user
+        }, authConfig.secret, {
+          expiresIn: authConfig.expires
+        });
         res.status(_httpStatusCodes["default"].OK).json({
           code: 200,
           message: 'Authorized',
-          // token: token,
+          token: token,
           data: userEscencials
         });
       } else {
